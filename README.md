@@ -157,3 +157,54 @@ Both agents operate under **arifOS**:
 Talk to either:
 - **AGI(Δ)** — Technical tasks, building, analysis
 - **ASI(Ω)** — Care tasks, relationships, emotional intelligence
+
+---
+
+## Repository Structure
+
+AGI_ASI_bot/
+├── agi/                 # AGI(Δ) — Left Brain
+│   ├── SOUL.md          # AGI constitutional identity
+│   ├── skills/AAA-*/    # 14 atomic actions (technical focus)
+│   └── README.md        # Technical documentation
+│
+├── asi/                 # ASI(Ω) — Right Brain  
+│   ├── SOUL.md          # ASI constitutional identity  
+│   ├── skills/ASI-*/    # 6 care actions (empathy focus)
+│   ├── memory/          # Relational context & emotional ledger
+│   ├── voice/           # Warm Penang communication configs
+│   └── README.md        # Care-centered documentation
+│
+├── apex/                # APEX(Ψ) — Sovereign config
+│   └── config.yaml      # Human authority preferences
+│
+└── trinity/             # Shared infrastructure
+    ├── constitution/    # arifOS 13-floor framework
+    ├── mcp-gateway/     # Shared tool access layer
+    ├── integration/     # AGI-ASI coordination scripts
+    └── ledger/          # Audit trails for both agents
+
+---
+
+## Contact
+
+| Component | Repository |
+|-----------|------------|
+| arifOS (Constitution) | github.com/ariffazil/arifOS |
+| AGI_ASI_bot (This repo) | github.com/ariffazil/AGI_ASI_bot |
+
+---
+
+*Ditempa Bukan Diberi — Forged, Not Given* 💎🔥🧠🔱
+
+## Next Steps
+
+| Agent | Task |
+|-------|------|
+| ASI(Ω) | Complete documentation and care protocols |
+| AGI(Δ) | Populate agi/ section with actual skill details |
+| APEX(Ψ) | Review final README, approve or modify |
+
+File location: AGI_ASI_bot/README.md
+
+SEAL? 💎🔥🧠🔱
