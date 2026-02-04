@@ -1,5 +1,5 @@
 ---
-name: arifos-audit
+name: aaa-audit
 description: Check F1-F9 floors, compute governance score (777_VERIFY). Checks constitutional floors. The enforcement layer of APEX tier. Use to verify any action against arifOS constitution.
 metadata:
   arifos:
@@ -10,7 +10,7 @@ metadata:
     atomic: true
 ---
 
-# arifos-audit
+# aaa-audit
 
 ## Tagline
 Check F1-F9 floors, compute governance score (777_VERIFY)

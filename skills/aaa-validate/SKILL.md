@@ -1,5 +1,5 @@
 ---
-name: arifos-validate
+name: aaa-validate
 description: Acknowledge experience, affirm dignity (555_SYNTHESIZE). Acknowledges lived experience and affirms dignity. Human connection stage. Use to validate user experience before problem-solving.
 metadata:
   arifos:
@@ -10,7 +10,7 @@ metadata:
     atomic: true
 ---
 
-# arifos-validate
+# aaa-validate
 
 ## Tagline
 Acknowledge experience, affirm dignity (555_SYNTHESIZE)

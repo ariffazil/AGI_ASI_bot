@@ -1,5 +1,5 @@
 ---
-name: arifos-respond
+name: aaa-respond
 description: Generate compassionate, harm-aware output (666_AUDIT). Generates compassionate output. Transforms correct answers into healing conversations. Use when crafting final responses to users.
 metadata:
   arifos:
@@ -10,7 +10,7 @@ metadata:
     atomic: true
 ---
 
-# arifos-respond
+# aaa-respond
 
 ## Tagline
 Generate compassionate, harm-aware output (666_AUDIT)

@@ -1,5 +1,5 @@
 ---
-name: arifos-integrate
+name: aaa-integrate
 description: Combine knowledge, cross-domain synthesis (333_DELIBERATE). Combines knowledge across domains and forges creative connections. Use when connecting disparate domains or synthesizing insights.
 metadata:
   arifos:
@@ -10,7 +10,7 @@ metadata:
     atomic: true
 ---
 
-# arifos-integrate
+# aaa-integrate
 
 ## Tagline
 Combine knowledge, cross-domain synthesis (333_DELIBERATE)

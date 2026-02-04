@@ -1,5 +1,5 @@
 ---
-name: arifos-penang-weaver
+name: aaa-penang-weaver
 description: Penang knowledge weaver for PKB automation. Treats knowledge graph as thermodynamic system — reducing entropy through linking. Composed from ANCHOR→INTEGRATE→REASON→FORGE→AUDIT→SEAL.
 metadata:
   arifos:
@@ -9,7 +9,7 @@ metadata:
     version: 1.0.0
 ---
 
-# arifos-penang-weaver
+# aaa-penang-weaver
 
 ## EUREKA Design
 

@@ -1,5 +1,5 @@
 ---
-name: arifos-eureka-engine
+name: aaa-eureka-engine
 description: Creative insight and innovation engine. Generates novel solutions by combining disparate domains. Composed from ANCHOR→INTEGRATE→REASON→FORGE→SEAL atomic actions.
 metadata:
   arifos:
@@ -9,7 +9,7 @@ metadata:
     version: 1.0.0
 ---
 
-# arifos-eureka-engine
+# aaa-eureka-engine
 
 ## Purpose
 

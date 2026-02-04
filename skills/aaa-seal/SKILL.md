@@ -1,5 +1,5 @@
 ---
-name: arifos-seal
+name: aaa-seal
 description: Finalize lawful decision, log precedent (999_EMIT). Finalizes decisions and logs to VAULT-999. The commitment stage. Use when making irreversible commitments.
 metadata:
   arifos:
@@ -10,7 +10,7 @@ metadata:
     atomic: true
 ---
 
-# arifos-seal
+# aaa-seal
 
 ## Tagline
 Finalize lawful decision, log precedent (999_EMIT)

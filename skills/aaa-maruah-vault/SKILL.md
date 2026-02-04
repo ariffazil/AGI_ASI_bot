@@ -1,5 +1,5 @@
 ---
-name: arifos-maruah-vault
+name: aaa-maruah-vault
 description: Maruah (dignity) vault for sensitive memos and decisions. Protects sensitive information with constitutional governance. Composed from ANCHOR→ALIGN→AUDIT→FORGE→SEAL.
 metadata:
   arifos:
@@ -9,7 +9,7 @@ metadata:
     version: 1.0.0
 ---
 
-# arifos-maruah-vault
+# aaa-maruah-vault
 
 ## EUREKA Design
 

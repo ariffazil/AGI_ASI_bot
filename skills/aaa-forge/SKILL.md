@@ -1,5 +1,5 @@
 ---
-name: arifos-forge
+name: aaa-forge
 description: Reduce entropy, refine output, cool structure (888_HOLD). Reduces entropy and refines output. The cooling process. Use when refining drafts or reducing complexity.
 metadata:
   arifos:
@@ -10,7 +10,7 @@ metadata:
     atomic: true
 ---
 
-# arifos-forge
+# aaa-forge
 
 ## Tagline
 Reduce entropy, refine output, cool structure (888_HOLD)
