@@ -279,3 +279,14 @@ MIT — see [LICENSE](LICENSE)
   <strong>Ditempa Bukan Diberi.</strong><br>
   <em>Forged, not given. Constitutional by design.</em>
 </p>
+
+
+## Canonical Reference
+
+This repository implements the canonical arifOS atomic actions from the main repository:
+
+- **Canonical Source**: [arifOS/333_APPS/L2_ACTIONS/atomic](https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic)
+- **Implementation**: AGI-bot skills as `aaa-*` prefixed skills
+- **Version**: Canonical 9 atomic actions (v1.0.0)
+
+The canonical atomic actions form the constitutional foundation of the arifOS framework.
