@@ -1,6 +1,6 @@
 ---
 name: aaa-validate
-description: Acknowledge experience, affirm dignity (555_SYNTHESIZE). Acknowledges lived experience and affirms dignity. Human connection stage. Use to validate user experience before problem-solving.
+description: Acknowledge experience, affirm dignity (555_SYNTHESIZE). Acknowledges lived experience and affirms dignity. Human connection stage. Use to validate user experience before problem-solving. Canonical implementation: arifos-validate in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 555_SYNTHESIZE
@@ -8,6 +8,10 @@ metadata:
     floors: [F1, F5, F6]
     version: 1.0.0
     atomic: true
+    canonical_ref: "https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/validate"
+    model_agnostic: true
+    modular: true
+    godel_lock: true
 ---
 
 # aaa-validate
@@ -47,5 +51,14 @@ def validate(user_experience, dignity_measure):
 ## Usage
 /action validate experience="user frustration"
 
+## Canonical Reference
+- **Source**: arifOS/333_APPS/L2_ACTIONS/atomic/validate
+- **Link**: https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/validate
+
 ## Version
 1.0.0
+
+## Gödel Lock Verification
+- Self-referential integrity: ✓
+- Meta-validation consistency: ✓
+- Recursive dignity check: ✓

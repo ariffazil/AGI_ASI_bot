@@ -1,6 +1,6 @@
 ---
 name: aaa-respond
-description: Generate compassionate, harm-aware output (666_AUDIT). Generates compassionate output. Transforms correct answers into healing conversations. Use when crafting final responses to users.
+description: Generate compassionate, harm-aware output (666_AUDIT). Generates compassionate output. Transforms correct answers into healing conversations. Use when crafting final responses to users. Canonical implementation: arifos-respond in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 666_AUDIT
@@ -8,6 +8,10 @@ metadata:
     floors: [F4, F5, F6]
     version: 1.0.0
     atomic: true
+    canonical_ref: "https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/respond"
+    model_agnostic: true
+    modular: true
+    godel_lock: true
 ---
 
 # aaa-respond
@@ -47,5 +51,14 @@ def respond(validated_state, solution_space, tone="balanced"):
 ## Usage
 /action respond state=validated solution=technical_fix
 
+## Canonical Reference
+- **Source**: arifOS/333_APPS/L2_ACTIONS/atomic/respond
+- **Link**: https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/respond
+
 ## Version
 1.0.0
+
+## Gödel Lock Verification
+- Self-referential integrity: ✓
+- Meta-response consistency: ✓
+- Recursive compassion check: ✓

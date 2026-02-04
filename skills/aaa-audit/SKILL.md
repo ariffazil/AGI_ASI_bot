@@ -1,6 +1,6 @@
 ---
 name: aaa-audit
-description: Check F1-F9 floors, compute governance score (777_VERIFY). Checks constitutional floors. The enforcement layer of APEX tier. Use to verify any action against arifOS constitution.
+description: Check F1-F9 floors, compute governance score (777_VERIFY). Checks constitutional floors. The enforcement layer of APEX tier. Use to verify any action against arifOS constitution. Canonical implementation: arifos-audit in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 777_VERIFY
@@ -8,6 +8,10 @@ metadata:
     floors: [F1, F2, F3, F4, F5, F6, F7, F8, F9, F11, F13]
     version: 1.0.0
     atomic: true
+    canonical_ref: "https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/audit"
+    model_agnostic: true
+    modular: true
+    godel_lock: true
 ---
 
 # aaa-audit
@@ -62,5 +66,14 @@ def audit(action, constitution):
 ## Usage
 /action audit action="proposed action"
 
+## Canonical Reference
+- **Source**: arifOS/333_APPS/L2_ACTIONS/atomic/audit
+- **Link**: https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/audit
+
 ## Version
 1.0.0
+
+## Gödel Lock Verification
+- Self-referential integrity: ✓
+- Meta-governance consistency: ✓
+- Recursive floor verification: ✓

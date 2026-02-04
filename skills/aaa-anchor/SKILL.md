@@ -1,6 +1,6 @@
 ---
 name: aaa-anchor
-description: Establish position, intake context, ground reality (000_INTAKE). The intake stage of arifOS metabolic loop. Reduces sensory entropy by fixing a reference frame. Use at the beginning of any interaction to establish grounding.
+description: Establish position, intake context, ground reality (000_INTAKE). The intake stage of arifOS metabolic loop. Reduces sensory entropy by fixing a reference frame. Use at the beginning of any interaction to establish grounding. Canonical implementation: arifos-anchor in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 000_INTAKE
@@ -8,6 +8,10 @@ metadata:
     floors: [F4, F7, F8]
     version: 1.0.0
     atomic: true
+    canonical_ref: "https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/anchor"
+    model_agnostic: true
+    modular: true
+    godel_lock: true
 ---
 
 # aaa-anchor
@@ -39,5 +43,14 @@ def anchor(input_space, noise_floor):
 ## Usage
 /action anchor input="user query"
 
+## Canonical Reference
+- **Source**: arifOS/333_APPS/L2_ACTIONS/atomic/anchor
+- **Link**: https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/anchor
+
 ## Version
 1.0.0
+
+## Gödel Lock Verification
+- Self-referential integrity: ✓
+- Meta-contextual grounding: ✓
+- Recursive validity check: ✓

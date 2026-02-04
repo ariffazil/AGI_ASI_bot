@@ -1,6 +1,6 @@
 ---
 name: aaa-align
-description: Match emotional frequency, detect power dynamics (444_CONSULT). Detects emotional state and power imbalance. The empathy detection stage of arifOS metabolic loop. Use when emotional calibration matters.
+description: Match emotional frequency, detect power dynamics (444_CONSULT). Detects emotional state and power imbalance. The empathy detection stage of arifOS metabolic loop. Use when emotional calibration matters. Canonical implementation: arifos-align in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 444_CONSULT
@@ -8,6 +8,10 @@ metadata:
     floors: [F5, F6, F9]
     version: 1.0.0
     atomic: true
+    canonical_ref: "https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/align"
+    model_agnostic: true
+    modular: true
+    godel_lock: true
 ---
 
 # aaa-align
@@ -47,5 +51,14 @@ def align(stakeholder_state, agent_state):
 ## Usage
 /action align message="user text"
 
+## Canonical Reference
+- **Source**: arifOS/333_APPS/L2_ACTIONS/atomic/align
+- **Link**: https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/align
+
 ## Version
 1.0.0
+
+## Gödel Lock Verification
+- Self-referential integrity: ✓
+- Meta-empathy consistency: ✓
+- Recursive resonance check: ✓

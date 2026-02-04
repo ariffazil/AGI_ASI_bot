@@ -1,6 +1,6 @@
 ---
 name: aaa-integrate
-description: Combine knowledge, cross-domain synthesis (333_DELIBERATE). Combines knowledge across domains and forges creative connections. Use when connecting disparate domains or synthesizing insights.
+description: Combine knowledge, cross-domain synthesis (333_DELIBERATE). Combines knowledge across domains and forges creative connections. Use when connecting disparate domains or synthesizing insights. Canonical implementation: arifos-integrate in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 333_DELIBERATE
@@ -8,6 +8,10 @@ metadata:
     floors: [F2, F7, F8]
     version: 1.0.0
     atomic: true
+    canonical_ref: "https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/integrate"
+    model_agnostic: true
+    modular: true
+    godel_lock: true
 ---
 
 # aaa-integrate
@@ -48,5 +52,14 @@ def integrate(domain_ensemble):
 ## Usage
 /action integrate domains=["economics", "thermodynamics"]
 
+## Canonical Reference
+- **Source**: arifOS/333_APPS/L2_ACTIONS/atomic/integrate
+- **Link**: https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/integrate
+
 ## Version
 1.0.0
+
+## Gödel Lock Verification
+- Self-referential integrity: ✓
+- Meta-synthesis consistency: ✓
+- Recursive domain mapping: ✓

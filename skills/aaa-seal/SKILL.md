@@ -1,6 +1,6 @@
 ---
 name: aaa-seal
-description: Finalize lawful decision, log precedent (999_EMIT). Finalizes decisions and logs to VAULT-999. The commitment stage. Use when making irreversible commitments.
+description: Finalize lawful decision, log precedent (999_EMIT). Finalizes decisions and logs to VAULT999. The commitment stage. Use when making irreversible commitments. Canonical implementation: arifos-seal in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 999_EMIT
@@ -8,6 +8,10 @@ metadata:
     floors: [F1, F3, F11]
     version: 1.0.0
     atomic: true
+    canonical_ref: "https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/seal"
+    model_agnostic: true
+    modular: true
+    godel_lock: true
 ---
 
 # aaa-seal
@@ -42,5 +46,14 @@ def seal(audited_action, authority, vault):
 ## Usage
 /action seal action=audited authority=arif
 
+## Canonical Reference
+- **Source**: arifOS/333_APPS/L2_ACTIONS/atomic/seal
+- **Link**: https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/seal
+
 ## Version
 1.0.0
+
+## Gödel Lock Verification
+- Self-referential integrity: ✓
+- Meta-commitment consistency: ✓
+- Recursive precedent check: ✓

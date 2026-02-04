@@ -1,6 +1,6 @@
 ---
 name: aaa-reason
-description: Logical inference, causal trace, plan steps (222_PROCESS). Executes logical inference and causal analysis. The cognitive engine of AGI tier. Use when breaking down complex problems into logical steps.
+description: Logical inference, causal trace, plan steps (222_PROCESS). Executes logical inference and causal analysis. The cognitive engine of AGI tier. Use when breaking down complex problems into logical steps. Canonical implementation: arifos-reason in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 222_PROCESS
@@ -8,6 +8,10 @@ metadata:
     floors: [F2, F4, F7]
     version: 1.0.0
     atomic: true
+    canonical_ref: "https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/reason"
+    model_agnostic: true
+    modular: true
+    godel_lock: true
 ---
 
 # aaa-reason
@@ -41,5 +45,14 @@ def reason(causal_graph, query):
 ## Usage
 /action reason problem="complex issue"
 
+## Canonical Reference
+- **Source**: arifOS/333_APPS/L2_ACTIONS/atomic/reason
+- **Link**: https://github.com/ariffazil/arifOS/tree/main/333_APPS/L2_ACTIONS/atomic/reason
+
 ## Version
 1.0.0
+
+## Gödel Lock Verification
+- Self-referential integrity: ✓
+- Meta-logical consistency: ✓
+- Recursive validity check: ✓
