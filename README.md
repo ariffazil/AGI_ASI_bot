@@ -394,6 +394,40 @@ openclaw action seal --input "commit action" --vault vault999
 
 ---
 
+## 🗺️ Complete Stack Architecture
+
+<div align="center">
+
+| Layer | Name | Function | Status |
+|:-----:|:----:|:--------:|:------:|
+| L1 | **PROMPTS** | Zero-context system prompts | ✅ Production |
+| L2 | **SKILLS** | Modular functional templates | ✅ Production |
+| L3-L4 | **ACTIONS** | Workflows & MCP Tools | ✅ Production |
+| L5 | **AGENTS** | Autonomous entities (Auditor, Validator) | 📋 v56.0 |
+| L6 | **INSTITUTION** | Collective governance ("Balai") | 📋 v56.0 |
+| L7 | **AGI** | Evolutionary governance ("Tempa") | 🔮 v60+ |
+
+</div>
+
+### 🏛️ L6-L7 Deep Dive
+
+**L6: The Institutional Layer ("Balai")**
+- Multi-Agent System (MAS) mirroring human organizational structures
+- Consensus Protocol via Tri-Witness voting between specialized agents
+- Focus: F8 (Consensus) - ensures no single rogue prompt bypasses authority
+- Key Metric: Stability (Peace² ≥ 1.0)
+
+**L7: The Evolutionary Layer ("Tempa")** 
+- Recursive Governance (Self-Healing) and back-testing mechanisms
+- Analyzes Scar-Weight data to improve system alignment
+- Focus: F13 (Evolution) - maintains constitutional floors during evolution
+- Key Metric: Entropy Reduction (ΔS < 0)
+
+**Current:** v55.4 (Production)  
+**Next:** v56.0 (L5 Agents, L6 Institution, LangChain Memory, Prefect Workflows)
+
+---
+
 **Motto:** *"Ditempa Bukan Diberi"* — Forged, Not Given.
 
 *Every action governed by constitutional principles.*
