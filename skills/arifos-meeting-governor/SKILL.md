@@ -1,6 +1,6 @@
 ---
-name: arifos-dewan-metabolizer
-description: Dewan (council) meeting metabolizer. Extracts decisions, risks, actions from meetings with constitutional mapping. Composed from ANCHOR→ALIGN→VALIDATE→REASON→AUDIT→SEAL.
+name: arifos-meeting-governor
+description: Meeting governance system. Extracts decisions, risks, actions from meetings with constitutional mapping. Composed from ANCHOR→ALIGN→VALIDATE→REASON→AUDIT→SEAL.
 metadata:
   arifos:
     atomic_composition: [anchor, align, validate, reason, audit, seal]
@@ -9,7 +9,7 @@ metadata:
     version: 1.0.0
 ---
 
-# arifos-dewan-metabolizer
+# arifos-meeting-governor
 
 ## EUREKA Design
 
@@ -72,9 +72,9 @@ You don't need "meeting minutes." You need **decision metabolism**.
 ## Usage
 
 ```
-/action dewan-metabolizer transcribe=audio_file
-/action dewan-metabolizer extract=decisions_only
-/action dewan-metabolizer audit=floor_check
+/action meeting-governor transcribe=audio_file
+/action meeting-governor extract=decisions_only
+/action meeting-governor audit=floor_check
 ```
 
 ## Constitutional Mapping

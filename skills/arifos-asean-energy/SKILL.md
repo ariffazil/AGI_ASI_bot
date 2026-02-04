@@ -1,6 +1,6 @@
 ---
-name: arifos-energy-radar
-description: Energy and geopolitics radar for ASEAN context. Monitors Brent crude, LNG spot prices, Ringgit/USD, and connects Middle East tensions to Malaysia energy strategy. Composed from ANCHOR→INTEGRATE→REASON→AUDIT→SEAL atomic actions.
+name: arifos-asean-energy
+description: ASEAN energy monitor for sovereign governance. Tracks Brent crude, LNG spot prices, Ringgit/USD, and connects Middle East tensions to Malaysia energy strategy. Composed from ANCHOR→INTEGRATE→REASON→AUDIT→SEAL atomic actions.
 metadata:
   arifos:
     atomic_composition: [anchor, integrate, reason, audit, seal]
@@ -9,7 +9,7 @@ metadata:
     version: 1.0.0
 ---
 
-# arifos-energy-radar
+# arifos-asean-energy
 
 ## EUREKA Design
 
@@ -65,9 +65,9 @@ You don't need more news. You need **governed insight**.
 ## Usage
 
 ```
-/action energy-radar focus="LNG" horizon="7d"
-/action energy-radar focus="Brent" alert_threshold="$80"
-/action energy-radar brief=”daily”
+/action asean-energy focus="LNG" horizon="7d"
+/action asean-energy focus="Brent" alert_threshold="$80"
+/action asean-energy brief="daily"
 ```
 
 ## Data Sources

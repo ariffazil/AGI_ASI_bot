@@ -1,6 +1,6 @@
 ---
-name: arifos-thermo-health
-description: Personal thermodynamic health monitor. Tracks HRV, sleep, steps as governance data. Treats body as first system to govern. Composed from ANCHOR→REASON→INTEGRATE→AUDIT→SEAL.
+name: arifos-health-governor
+description: Personal health governance system. Tracks HRV, sleep, steps as governance data. Treats body as first system to govern. Composed from ANCHOR→REASON→INTEGRATE→AUDIT→SEAL.
 metadata:
   arifos:
     atomic_composition: [anchor, reason, integrate, audit, seal]
@@ -9,7 +9,7 @@ metadata:
     version: 1.0.0
 ---
 
-# arifos-thermo-health
+# arifos-health-governor
 
 ## EUREKA Design
 
@@ -65,9 +65,9 @@ You don't need "workout harder." You need **entropy reduction**.
 ## Usage
 
 ```
-/action thermo-health check=daily
-/action thermo-health trend=weekly
-/action thermo-health force_rest=true
+/action health-governor check=daily
+/action health-governor trend=weekly
+/action health-governor force_rest=true
 ```
 
 ## Governance Rules
