@@ -1,6 +1,6 @@
 ---
-name: aaa-forge
-description: Reduce entropy, refine output, cool structure (888_HOLD). Reduces entropy and refines output. The cooling process. Use when refining drafts or reducing complexity. Canonical implementation: arifos-forge in arifOS/333_APPS/L2_ACTIONS/atomic
+name: AAA-forge
+description: Reduce entropy, refine output, cool structure (888_HOLD). Reduces entropy and refines output. The cooling process. Use when refining drafts or reducing complexity. Canonical implementation: AAA-forge in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 888_HOLD
@@ -14,7 +14,7 @@ metadata:
     godel_lock: true
 ---
 
-# aaa-forge
+# AAA-forge
 
 ## Tagline
 Reduce entropy, refine output, cool structure (888_HOLD)

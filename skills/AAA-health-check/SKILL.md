@@ -1,5 +1,5 @@
 ---
-name: aaa-health-check
+name: AAA-health-check
 description: Personal health metrics monitoring and governance. Tracks biometrics (HRV, sleep, steps) to maintain optimal decision-making capacity. Composed from ANCHOR→REASON→INTEGRATE→AUDIT→SEAL atomic actions.
 metadata:
   arifos:
@@ -9,7 +9,7 @@ metadata:
     version: 1.0.0
 ---
 
-# aaa-health-check
+# AAA-health-check
 
 ## Purpose
 

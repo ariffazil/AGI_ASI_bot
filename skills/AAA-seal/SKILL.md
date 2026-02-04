@@ -1,6 +1,6 @@
 ---
-name: aaa-seal
-description: Finalize lawful decision, log precedent (999_EMIT). Finalizes decisions and logs to VAULT999. The commitment stage. Use when making irreversible commitments. Canonical implementation: arifos-seal in arifOS/333_APPS/L2_ACTIONS/atomic
+name: AAA-seal
+description: Finalize lawful decision, log precedent (999_EMIT). Finalizes decisions and logs to VAULT999. The commitment stage. Use when making irreversible commitments. Canonical implementation: AAA-seal in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 999_EMIT
@@ -14,7 +14,7 @@ metadata:
     godel_lock: true
 ---
 
-# aaa-seal
+# AAA-seal
 
 ## Tagline
 Finalize lawful decision, log precedent (999_EMIT)

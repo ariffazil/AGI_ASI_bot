@@ -1,6 +1,6 @@
 ---
-name: aaa-anchor
-description: Establish position, intake context, ground reality (000_INTAKE). The intake stage of arifOS metabolic loop. Reduces sensory entropy by fixing a reference frame. Use at the beginning of any interaction to establish grounding. Canonical implementation: arifos-anchor in arifOS/333_APPS/L2_ACTIONS/atomic
+name: AAA-anchor
+description: Establish position, intake context, ground reality (000_INTAKE). The intake stage of arifOS metabolic loop. Reduces sensory entropy by fixing a reference frame. Use at the beginning of any interaction to establish grounding. Canonical implementation: AAA-anchor in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 000_INTAKE
@@ -14,7 +14,7 @@ metadata:
     godel_lock: true
 ---
 
-# aaa-anchor
+# AAA-anchor
 
 ## Tagline
 Establish position, intake context, ground reality (000_INTAKE)

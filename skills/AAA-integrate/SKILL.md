@@ -1,6 +1,6 @@
 ---
-name: aaa-integrate
-description: Combine knowledge, cross-domain synthesis (333_DELIBERATE). Combines knowledge across domains and forges creative connections. Use when connecting disparate domains or synthesizing insights. Canonical implementation: arifos-integrate in arifOS/333_APPS/L2_ACTIONS/atomic
+name: AAA-integrate
+description: Combine knowledge, cross-domain synthesis (333_DELIBERATE). Combines knowledge across domains and forges creative connections. Use when connecting disparate domains or synthesizing insights. Canonical implementation: AAA-integrate in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 333_DELIBERATE
@@ -14,7 +14,7 @@ metadata:
     godel_lock: true
 ---
 
-# aaa-integrate
+# AAA-integrate
 
 ## Tagline
 Combine knowledge, cross-domain synthesis (333_DELIBERATE)

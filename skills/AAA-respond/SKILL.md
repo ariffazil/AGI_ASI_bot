@@ -1,6 +1,6 @@
 ---
-name: aaa-respond
-description: Generate compassionate, harm-aware output (666_AUDIT). Generates compassionate output. Transforms correct answers into healing conversations. Use when crafting final responses to users. Canonical implementation: arifos-respond in arifOS/333_APPS/L2_ACTIONS/atomic
+name: AAA-respond
+description: Generate compassionate, harm-aware output (666_AUDIT). Generates compassionate output. Transforms correct answers into healing conversations. Use when crafting final responses to users. Canonical implementation: AAA-respond in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 666_AUDIT
@@ -14,7 +14,7 @@ metadata:
     godel_lock: true
 ---
 
-# aaa-respond
+# AAA-respond
 
 ## Tagline
 Generate compassionate, harm-aware output (666_AUDIT)

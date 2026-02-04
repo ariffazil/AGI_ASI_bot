@@ -1,5 +1,5 @@
 ---
-name: aaa-energy-briefing
+name: AAA-energy-briefing
 description: Daily energy market briefing for ASEAN context. Monitors Brent crude, LNG spot prices, Ringgit/USD, and provides actionable insights on energy trends. Composed from ANCHOR→INTEGRATE→REASON→AUDIT→SEAL atomic actions.
 metadata:
   arifos:
@@ -9,7 +9,7 @@ metadata:
     version: 1.0.0
 ---
 
-# aaa-energy-briefing
+# AAA-energy-briefing
 
 ## Purpose
 

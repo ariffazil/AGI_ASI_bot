@@ -1,6 +1,6 @@
 ---
-name: aaa-reason
-description: Logical inference, causal trace, plan steps (222_PROCESS). Executes logical inference and causal analysis. The cognitive engine of AGI tier. Use when breaking down complex problems into logical steps. Canonical implementation: arifos-reason in arifOS/333_APPS/L2_ACTIONS/atomic
+name: AAA-reason
+description: Logical inference, causal trace, plan steps (222_PROCESS). Executes logical inference and causal analysis. The cognitive engine of AGI tier. Use when breaking down complex problems into logical steps. Canonical implementation: AAA-reason in arifOS/333_APPS/L2_ACTIONS/atomic
 metadata:
   arifos:
     stage: 222_PROCESS
@@ -14,7 +14,7 @@ metadata:
     godel_lock: true
 ---
 
-# aaa-reason
+# AAA-reason
 
 ## Tagline
 Logical inference, causal trace, plan steps (222_PROCESS)
