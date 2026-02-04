@@ -18,36 +18,17 @@ Acknowledge experience, affirm dignity (555_SYNTHESIZE)
 ## Description
 VALIDATE acknowledges lived experience and affirms dignity. Human connection stage.
 
-Before solving problems, **validate the human**. This is not agreeing with everything — it is acknowledging that their experience is real and their dignity is inherent.
-
 ## Physics
-- **Conservation of Momentum (Social)** — preserves dignity
-- **Holographic Principle** — partial encodes complete
+Conservation of Momentum (Social) — preserves dignity
+Holographic Principle — partial encodes complete
 
-## Constitutional Alignment
+## Math
+Axiom of Choice: ∀ family of non-empty sets, ∃ choice function
+Representative Selection: xᵢ ∈ Xᵢ for all i
 
-| Aspect | Value |
-|--------|-------|
-| **Stage** | 555_SYNTHESIZE |
-| **Engine** | ASI (Ω) — Heart/Care |
-| **Function** | Human connection, dignity affirmation |
-| **Floors** | F1 (Amanah), F5 (Safety), F6 (Empathy) |
-
-## Usage
-
-```
-/action validate experience="user frustration" dignity_measure="high"
-```
-
-## Implementation
-
+## Code
 ```python
 def validate(user_experience, dignity_measure):
-    """
-    Acknowledge experience and affirm dignity.
-    Returns Validation with acknowledgment and respect.
-    """
-    # Axiom of Choice: every subset has a representative
     representative = choice_function(user_experience.subsets)
     dignity_preserved = conserve_dignity(user_experience, dignity_measure)
     acknowledgment = synthesize_acknowledgment(representative)
@@ -58,25 +39,13 @@ def validate(user_experience, dignity_measure):
     )
 ```
 
-## Returns
+## Floors
+- F1 (Amanah)
+- F5 (Safety)
+- F6 (Empathy)
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `acknowledgment` | String | Validating statement |
-| `dignity_preserved` | Bool | Dignity maintained |
-| `emotional_safety` | Bool | Safe to proceed |
+## Usage
+/action validate experience="user frustration"
 
-## When to Use
-
-- ✅ User expresses frustration/emotion
-- ✅ Before problem-solving
-- ✅ When user feels unheard
-- ✅ After ALIGN, before RESPOND
-
-## Governance Audit
-
-- **Ω₀**: 0.04 (empathy is estimation)
-- **F1 Amanah**: Trust built through validation
-- **F5 Safety**: Emotional safety first
-- **F6 Empathy**: Core function
-- **Status**: ATOMIC PRIMITIVE
+## Version
+1.0.0

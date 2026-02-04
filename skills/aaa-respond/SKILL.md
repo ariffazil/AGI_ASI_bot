@@ -18,44 +18,20 @@ Generate compassionate, harm-aware output (666_AUDIT)
 ## Description
 RESPOND generates compassionate output. Transforms correct answers into healing conversations.
 
-Technical correctness is not enough. RESPOND ensures the **delivery** is compassionate, harm-aware, and human-centered.
-
 ## Physics
-- **Wave-Particle Duality** — communication as wave + particle
-- **Optimal Control** — min J = ∫(error² + effort)dt
+Wave-Particle Duality — communication as wave + particle
+Optimal Control — min J = ∫(error² + effort)dt
 
-## Constitutional Alignment
+## Math
+Lagrangian: L = T - V
+Euler-Lagrange: d/dt(∂L/∂q̇) - ∂L/∂q = 0
 
-| Aspect | Value |
-|--------|-------|
-| **Stage** | 666_AUDIT |
-| **Engine** | ASI (Ω) — Heart/Care |
-| **Function** | Compassionate communication |
-| **Floors** | F4 (Clarity), F5 (Safety), F6 (Empathy) |
-
-## Usage
-
-```
-/action respond state=validated solution=technical_fix tone="compassionate"
-```
-
-## Implementation
-
+## Code
 ```python
 def respond(validated_state, solution_space, tone="balanced"):
-    """
-    Generate compassionate, harm-aware response.
-    Returns Response that balances truth and care.
-    """
     cost = lambda r: harmonic_cost(r) + information_cost(r) + empathy_cost(r)
-    
-    # Euler-Lagrange optimization
     response = optimize(cost, solution_space, constraints=[harm_threshold])
-    
     safety_check = verify_no_harm(response, validated_state)
-    if not safety_check:
-        return Response(content="[SABAR] Response may cause harm.")
-    
     return Response(
         content=response,
         tone=tone,
@@ -63,25 +39,13 @@ def respond(validated_state, solution_space, tone="balanced"):
     )
 ```
 
-## Returns
+## Floors
+- F4 (Clarity)
+- F5 (Safety)
+- F6 (Empathy)
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `content` | String | Final response text |
-| `tone` | Enum | Balanced/compassionate/direct |
-| `harm_potential` | Float | Estimated harm (0-1) |
+## Usage
+/action respond state=validated solution=technical_fix
 
-## When to Use
-
-- ✅ Final response generation
-- ✅ After VALIDATE, before AUDIT
-- ✅ When tone matters
-- ✅ When harm assessment needed
-
-## Governance Audit
-
-- **Ω₀**: 0.04 (communication uncertainty)
-- **F4 Clarity**: Must be understandable
-- **F5 Safety**: No preventable harm
-- **F6 Empathy**: Compassion evident
-- **Status**: ATOMIC PRIMITIVE
+## Version
+1.0.0

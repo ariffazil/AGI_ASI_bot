@@ -18,35 +18,17 @@ Reduce entropy, refine output, cool structure (888_HOLD)
 ## Description
 FORGE reduces entropy and refines output. The cooling process.
 
-Like a blacksmith cooling hot metal, FORGE takes raw output and **refines it** — reducing noise, improving clarity, maintaining structure.
-
 ## Physics
-- **Simulated Annealing** — T → 0 for global minimum
-- **Renormalization Group** — coarse-graining fluctuations
+Simulated Annealing — T → 0 for global minimum
+Renormalization Group — coarse-graining fluctuations
 
-## Constitutional Alignment
+## Math
+Boltzmann: P(x) = e^(-E(x)/kT)/Z
+Cooling Schedule: T(t) = T₀/ln(t+1)
 
-| Aspect | Value |
-|--------|-------|
-| **Stage** | 888_HOLD |
-| **Engine** | AGI (Δ) — Mind/Logic |
-| **Function** | Entropy reduction, refinement |
-| **Floors** | F4 (Clarity), F7 (Humility), F8 (Genius) |
-
-## Usage
-
-```
-/action forge draft="raw output" temperature_schedule="gradual"
-```
-
-## Implementation
-
+## Code
 ```python
 def forge(draft_output, temperature_schedule):
-    """
-    Reduce entropy via simulated annealing.
-    Returns RefinedOutput with lower entropy.
-    """
     T = temperature_schedule.initial
     current_state = draft_output
     while T > T_final:
@@ -62,25 +44,13 @@ def forge(draft_output, temperature_schedule):
     )
 ```
 
-## Returns
+## Floors
+- F4 (Clarity)
+- F7 (Humility)
+- F8 (Genius)
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `content` | String | Rined output |
-| `entropy` | Float | Final entropy (should be lower) |
-| `iterations` | Int | Annealing iterations performed |
+## Usage
+/action forge draft="raw output"
 
-## When to Use
-
-- ✅ Refining rough drafts
-- ✅ Reducing output complexity
-- ✅ Improving clarity
-- ✅ After AUDIT, before SEAL
-
-## Governance Audit
-
-- **Ω₀**: Monitored during cooling
-- **F4 Clarity**: Output must be clearer than input
-- **F7 Humility**: No over-polishing (info loss)
-- **F8 Genius**: Structure preserved, not destroyed
-- **Status**: ATOMIC PRIMITIVE
+## Version
+1.0.0
