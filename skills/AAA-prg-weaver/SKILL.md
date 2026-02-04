@@ -1,6 +1,6 @@
 ---
-name: AAA-pkb-weaver
-description: Personal Knowledge Base (PKB) automation and entropy management. Reduces cognitive load by connecting information, identifying contradictions, and maintaining knowledge graph integrity. Use for managing personal knowledge systems like Obsidian, Roam, or similar.
+name: AAA-prg-weaver
+description: Personal Research & Governance (PRG) automation and entropy management. Reduces cognitive load by connecting information, identifying contradictions, and maintaining knowledge graph integrity. Use for managing personal knowledge systems like Obsidian, Roam, or similar.
 metadata:
   arifos:
     stage: 333_DELIBERATE
@@ -13,13 +13,13 @@ metadata:
     godel_lock: true
 ---
 
-# AAA-pkb-weaver
+# AAA-prg-weaver
 
 ## Tagline
-Personal Knowledge Base automation and entropy management
+Personal Research & Governance (PRG) automation and entropy management
 
 ## Description
-PKB-Weaver manages your personal knowledge base by connecting information, identifying contradictions, and reducing cognitive entropy. Treats knowledge as a thermodynamic system where connections reduce entropy.
+PRG-Weaver manages your personal research and governance systems by connecting information, identifying contradictions, and reducing cognitive entropy. Treats knowledge as a thermodynamic system where connections reduce entropy.
 
 ## Constitutional Alignment
 
@@ -27,7 +27,7 @@ PKB-Weaver manages your personal knowledge base by connecting information, ident
 |--------|-------|
 | **Stage** | 333_DELIBERATE (Synthesis and connection) |
 | **Engine** | AGI (Δ) — Mind/Logic |
-| **Function** | Knowledge connection, contradiction detection |
+| **Function** | Research connection, governance automation |
 | **Floors** | F2 (Truth), F7 (Humility), F8 (Genius) |
 
 ## Physics
@@ -47,7 +47,7 @@ PKB-Weaver manages your personal knowledge base by connecting information, ident
 ## Implementation
 
 ```python
-def pkb_weaver(new_information, existing_knowledge):
+def prg_weaver(new_information, existing_knowledge):
     """
     Weave new information into existing knowledge graph.
     Returns refined knowledge structure with reduced entropy.
@@ -94,7 +94,7 @@ def pkb_weaver(new_information, existing_knowledge):
 | Avg connections per node | > 2 | Improve connectivity |
 | Daily entropy Δ | < 0 | Must reduce daily |
 
-## PKB Automation Workflow
+## PRG Automation Workflow
 
 1. **Daily Weave**: Process new inputs (readings, thoughts, conversations)
 2. **Connection Phase**: Link to existing nodes
@@ -104,9 +104,9 @@ def pkb_weaver(new_information, existing_knowledge):
 
 ## When to Use
 
-- ✅ Adding new information to PKB
-- ✅ Detecting contradictions in beliefs
-- ✅ Connecting disparate knowledge areas
+- ✅ Adding new information to PRG system
+- ✅ Detecting contradictions in research
+- ✅ Connecting governance knowledge areas
 - ✅ Reducing cognitive load through organization
 
 ## Governance Audit
@@ -115,4 +115,4 @@ def pkb_weaver(new_information, existing_knowledge):
 - **F2 Truth**: Verify information accuracy
 - **F7 Humility**: Acknowledge knowledge gaps
 - **F8 Genius**: Optimize knowledge structure
-- **Status**: PKB AUTOMATION TOOL
+- **Status**: PRG AUTOMATION TOOL
