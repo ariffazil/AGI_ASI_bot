@@ -16,10 +16,10 @@ metadata:
 # AAA-prg-weaver
 
 ## Tagline
-Personal Research & Governance (PRG) automation and entropy management
+Personal Research & Genius (PRG) automation and entropy management
 
 ## Description
-PRG-Weaver manages your personal research and governance systems by connecting information, identifying contradictions, and reducing cognitive entropy. Treats knowledge as a thermodynamic system where connections reduce entropy.
+PRG-Weaver manages your personal research and genius systems by connecting information, identifying contradictions, and reducing cognitive entropy. Treats knowledge as a thermodynamic system where connections reduce entropy.
 
 ## Constitutional Alignment
 
@@ -27,7 +27,7 @@ PRG-Weaver manages your personal research and governance systems by connecting i
 |--------|-------|
 | **Stage** | 333_DELIBERATE (Synthesis and connection) |
 | **Engine** | AGI (Δ) — Mind/Logic |
-| **Function** | Research connection, governance automation |
+| **Function** | Research connection, genius automation |
 | **Floors** | F2 (Truth), F7 (Humility), F8 (Genius) |
 
 ## Physics
@@ -38,10 +38,10 @@ PRG-Weaver manages your personal research and governance systems by connecting i
 ## Usage
 
 ```
-/action pkb-weaver connect=new_info existing=related_nodes
-/action pkb-weaver audit=entropy current_knowledge
-/action pkb-weaver resolve=contradiction claim_a_vs_claim_b
-/action pkb-weaver weave=knowledge_graph daily
+/action prg-weaver connect=new_info existing=related_nodes
+/action prg-weaver audit=entropy current_knowledge
+/action prg-weaver resolve=contradiction claim_a_vs_claim_b
+/action prg-weaver weave=knowledge_graph daily
 ```
 
 ## Implementation
@@ -106,7 +106,7 @@ def prg_weaver(new_information, existing_knowledge):
 
 - ✅ Adding new information to PRG system
 - ✅ Detecting contradictions in research
-- ✅ Connecting governance knowledge areas
+- ✅ Connecting genius knowledge areas
 - ✅ Reducing cognitive load through organization
 
 ## Governance Audit
