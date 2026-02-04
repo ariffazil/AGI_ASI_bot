@@ -1,500 +1,159 @@
-# AGI-bot — Constitutional AI Governance Layer (Work in Progress)
-
-**A fork of OpenClaw with arifOS Constitutional Framework integration.**
-
-*A governance layer for AI assistants, not AGI itself.*
-
----
-
-## ⚠️ CRITICAL DISCLAIMER
-
-**This is NOT artificial general intelligence.** This is a governance layer built on top of OpenClaw that adds constitutional guardrails to standard LLMs (Claude, GPT, etc.).
-
-**What you get:**
-- OpenClaw's AI agent capabilities (file ops, shell access, messaging)
-- arifOS constitutional vocabulary layer
-- 13-floor safety framework (currently vocabulary-based)
-- Trinity-inspired processing concepts
-
-**What you DON'T get:**
-- Artificial General Intelligence
-- Self-aware or sentient systems
-- Revolutionary reasoning capabilities
-- AGI-level intelligence
-
----
-
-## 🚀 What Actually Works
-
-### ✅ OpenClaw Foundation
-- **Messaging**: WhatsApp, Telegram, Discord, Slack integration
-- **System Access**: File operations, shell commands, web browsing
-- **Persistence**: Memory across sessions
-- **Automation**: Scheduled tasks and workflows
-
-### ✅ arifOS Vocabulary Layer
-- **Constitutional Floors**: F1-F13 concepts applied to responses
-- **Trinity Processing**: Logic (AGI), Safety (ASI), Judgment (APEX) concepts
-- **Governance Vocabulary**: Constitutional language and frameworks
-
-### ⚠️ What's Coming (v56.0+)
-- **Runtime Enforcement**: Actual constitutional gate checking
-- **Computed Values**: Real Ω₀ calculation vs declared values
-- **Tri-Witness**: Actual multi-agent consensus
-- **Full Pipeline**: 9 Atomic Actions runtime implementation
-
----
-
-## 🚀 Quick Start Guide
-
-### For Local Terminal Setup
-
-1. **Clone the repository:**
-```bash
-git clone https://github.com/ariffazil/AGI-bot.git
-cd AGI-bot
-```
-
-2. **Install dependencies:**
-```bash
-# Using pip
-pip install -e ".[dev]"
-
-# Or using conda
-conda env create -f environment.yml
-conda activate agi-bot
-```
-
-3. **Initialize the system:**
-```bash
-# Initialize configuration
-openclaw config.init
-
-# Start the gateway
-openclaw gateway start
-```
-
-4. **Connect your preferred interface:**
-```bash
-# Web interface (default)
-open http://localhost:3000
-
-# Or use CLI
-openclaw cli
-```
-
-### For VPS Deployment
-
-1. **Provision your VPS (Ubuntu 20.04+ recommended):**
-```bash
-# SSH into your VPS
-ssh user@your-vps-ip
-
-# Clone the repository
-git clone https://github.com/ariffazil/AGI-bot.git
-cd AGI-bot
-```
-
-2. **Install system dependencies:**
-```bash
-sudo apt update
-sudo apt install python3.10 python3.10-venv python3.10-dev git curl build-essential
-```
-
-3. **Set up Python virtual environment:**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install --upgrade pip setuptools wheel
-```
-
-4. **Install AGI-bot:**
-```bash
-pip install -e ".[dev]"
-```
-
-5. **Configure for production:**
-```bash
-# Initialize configuration
-openclaw config.init
-
-# Configure for your domain (edit config.yaml)
-nano ~/.openclaw/config.yaml
-```
-
-6. **Set up systemd service for auto-start:**
-```bash
-sudo tee /etc/systemd/system/agi-bot.service << EOF
-[Unit]
-Description=AGI-bot Service
-After=network.target
-
-[Service]
-Type=simple
-User=$(whoami)
-WorkingDirectory=/home/$(whoami)/AGI-bot
-Environment=PATH=/home/$(whoami)/AGI-bot/venv/bin
-ExecStart=/home/$(whoami)/AGI-bot/venv/bin/openclaw gateway start
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-EOF
-
-sudo systemctl daemon-reload
-sudo systemctl enable agi-bot
-sudo systemctl start agi-bot
-```
-
-7. **Set up reverse proxy with nginx (optional but recommended):**
-```bash
-sudo apt install nginx
-sudo tee /etc/nginx/sites-available/agi-bot << EOF
-server {
-    listen 80;
-    server_name your-domain.com;
-
-    location / {
-        proxy_pass http://localhost:3000;
-        proxy_set_header Host \$host;
-        proxy_set_header X-Real-IP \$remote_addr;
-        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto \$scheme;
-    }
-}
-EOF
-
-sudo ln -s /etc/nginx/sites-available/agi-bot /etc/nginx/sites-enabled/
-sudo nginx -t
-sudo systemctl restart nginx
-```
-
----
-
-## 🧩 AGI Protocol Setup
-
-### 1. Constitutional Configuration
-
-After installation, configure the constitutional framework:
-
-```bash
-# Set up your identity
-openclaw config.set agents.main.identity.name "Your Name"
-openclaw config.set agents.main.identity.timezone "Asia/Kuala_Lumpur"
-openclaw config.set agents.main.identity.pronouns "they/them"
-
-# Enable constitutional floors
-openclaw config.set agents.main.arifos.enabled true
-openclaw config.set agents.main.arifos.floors "[1,2,3,4,5,6,7,8,9,10,11,12,13]"
-```
-
-### 2. Skill Activation
-
-Enable the core constitutional skills:
-
-```bash
-# Activate all 9 atomic actions
-openclaw skill.activate AAA-anchor
-openclaw skill.activate AAA-align
-openclaw skill.activate AAA-reason
-openclaw skill.activate AAA-integrate
-openclaw skill.activate AAA-validate
-openclaw skill.activate AAA-respond
-openclaw skill.activate AAA-audit
-openclaw skill.activate AAA-forge
-openclaw skill.activate AAA-seal
-
-# Activate domain skills
-openclaw skill.activate AAA-energy-briefing
-openclaw skill.activate AAA-health-check
-openclaw skill.activate AAA-eureka-engine
-openclaw skill.activate AAA-vault999
-openclaw skill.activate AAA-prg-weaver
-```
-
-### 3. Communication Channels
-
-Set up your preferred communication method:
-
-```bash
-# For WhatsApp (using BlueBubbles)
-openclaw config.set channels.whatsapp.enabled true
-openclaw config.set channels.whatsapp.type bluebubbles
-
-# For Telegram
-openclaw config.set channels.telegram.enabled true
-openclaw config.set channels.telegram.bot_token "your_bot_token_here"
-
-# For Web Chat (default)
-openclaw config.set channels.webchat.enabled true
-```
-
----
-
-## 🔄 Session Management
-
-### Starting a New Session
-
-```bash
-# Start a new session
-openclaw session.start --name "constitutional-session"
-
-# Or use the shorthand
-openclaw session.new
-```
-
-### Sealing Sessions
-
-To properly seal a session with constitutional oversight:
-
-```bash
-# Seal current session with full audit
-openclaw session.seal --with-audit --reason "completed constitutional review"
-
-# Check session status
-openclaw session.status
-
-# List all sessions
-openclaw session.list
-```
-
-### Session Verification Protocol
-
-Follow this protocol for constitutional session sealing:
-
-1. **AUDIT Phase**: Verify all actions taken during the session
-```bash
-openclaw action audit --scope current_session
-```
-
-2. **FORGE Phase**: Refine and optimize the outcomes
-```bash
-openclaw action forge --input session_output --optimize
-```
-
-3. **SEAL Phase**: Commit with constitutional authority
-```bash
-openclaw action seal --commit --authority constitutional_governance --vault vault999
-```
-
----
-
-## ⚠️ SECURITY CONSIDERATIONS
-
-OpenClaw systems carry inherent security risks:
-- **Shell Access**: Can execute arbitrary commands
-- **File Operations**: Can read/write system files  
-- **API Keys**: May expose credentials if misconfigured
-- **Prompt Injection**: Vulnerable to sophisticated attacks
-
-**Only deploy in trusted environments with proper security measures.**
-
----
-
-## 🛡️ Constitutional Governance
-
-### The 9 Atomic Actions Flow
-
-```
-ANCHOR (000) → REASON (222) → INTEGRATE (333) → ALIGN (444) → 
-VALIDATE (555) → RESPOND (666) → AUDIT (777) → FORGE (888) → SEAL (999)
-```
-
-Each action implements specific constitutional floors:
-
-| Action | Primary Floors | Function |
-|--------|----------------|----------|
-| anchor | F4, F7, F8 | Ground reality, reduce entropy |
-| align | F5, F6, F9 | Emotional matching, safety |
-| reason | F2, F4, F7 | Logical inference, truth |
-| integrate | F2, F7, F8 | Cross-domain synthesis |
-| validate | F1, F5, F6 | Acknowledge, affirm dignity |
-| respond | F4, F5, F6 | Compassionate output |
-| audit | ALL FLOORS | Constitutional verification |
-| forge | F4, F7, F8 | Refine, reduce entropy |
-| seal | F1, F3, F11 | Commit, precedential logging |
-
-### Governance Commands
-
-```bash
-# Check constitutional compliance
-openclaw governance.check --all_floors
-
-# Force constitutional audit
-openclaw action audit --force --all_components
-
-# View current governance status
-openclaw governance.status
-
-# Emergency override (human veto)
-openclaw governance.override --reason "human_intervention_required" --authority human_sovereign
-```
-
----
-
-## 🧠 AGI Trinity Operation
-
-The system operates through the AGI·ASI·APEX trinity:
-
-### AGI (Δ) - Mind/Logic
-```bash
-# Engage logical processing
-openclaw trinity.agi.process --input "analyze market trends" --logic_type "deductive"
-```
-
-### ASI (Ω) - Heart/Care  
-```bash
-# Engage empathetic processing
-openclaw trinity.asi.care --input "team sentiment analysis" --care_type "empathetic"
-```
-
-### APEX (Ψ) - Crown/Law
-```bash
-# Engage governance processing
-openclaw trinity.apex.govern --input "policy decision" --authority "constitutional"
-```
-
----
-
-## 🛠️ Troubleshooting
-
-### Common Issues
-
-**Gateway won't start:**
-```bash
-# Check logs
-openclaw gateway logs
-
-# Restart
-openclaw gateway restart
-
-# Check status
-openclaw gateway status
-```
-
-**Skills not loading:**
-```bash
-# List available skills
-openclaw skill.list
-
-# Reload skills
-openclaw skill.reload --all
-
-# Check skill status
-openclaw skill.status AAA-anchor
-```
-
-**Configuration issues:**
-```bash
-# Validate config
-openclaw config.validate
-
-# Reset to defaults
-openclaw config.reset --confirm
-```
-
----
-
-## 📜 Constitutional Command Reference
-
-### Essential Commands
-```bash
-openclaw status                    # System status
-openclaw session.list             # Active sessions  
-openclaw skill.list               # Available skills
-openclaw config.show              # Current configuration
-openclaw gateway start/stop       # Control gateway
-openclaw governance.status        # Constitutional status
-```
-
-### Action Commands
-```bash
-openclaw action anchor --input "ground information"
-openclaw action align --input "match emotional context"  
-openclaw action reason --input "logical analysis"
-openclaw action integrate --input "cross-domain synthesis"
-openclaw action validate --input "acknowledge dignity"
-openclaw action respond --input "generate response"
-openclaw action audit --input "verify compliance"
-openclaw action forge --input "refine output"
-openclaw action seal --input "commit action" --vault vault999
-```
-
----
-
-## 🗺️ Complete Stack Architecture
+# AGI_ASI_bot Trinity Intelligence System — Left Brain + Right Brain under Constitutional Governance
 
 <div align="center">
 
-| Layer | Name | Function | Status |
-|:-----:|:----:|:--------:|:------:|
-| L1 | **PROMPTS** | Zero-context system prompts | ✅ Production |
-| L2 | **SKILLS** | Modular functional templates | ✅ Production |
-| L3-L4 | **ACTIONS** | Workflows & MCP Tools | ✅ Production |
-| L5 | **AGENTS** | Autonomous entities (Auditor, Validator) | 📋 v56.0 |
-| L6 | **INSTITUTION** | Collective governance ("Balai") | 📋 v56.0 |
-| L7 | **AGI** | Evolutionary governance ("Tempa") | 🔮 v60+ |
+| 🔷 AGI(Δ) | 🔶 ASI(Ω) | ⚪ APEX(Ψ) |
+|:---------:|:---------:|:----------:|
+| Mind/Logic | Heart/Care | Sovereign |
+| Structure | Empathy | Authority |
+| Build | Nurture | Decide |
+
+*Ditempa Bukan Diberi — Forged, Not Given* 💎🔥🧠🔱
 
 </div>
 
-### 🏛️ L6-L7 Deep Dive
+---
 
-**L6: The Institutional Layer ("Balai")**
-- Multi-Agent System (MAS) mirroring human organizational structures
-- Consensus Protocol via Tri-Witness voting between specialized agents
-- Focus: F8 (Consensus) - ensures no single rogue prompt bypasses authority
-- Key Metric: Stability (Peace² ≥ 1.0)
+## What is This?
 
-**L7: The Evolutionary Layer ("Tempa")** 
-- Recursive Governance (Self-Healing) and back-testing mechanisms
-- Analyzes Scar-Weight data to improve system alignment
-- Focus: F13 (Evolution) - maintains constitutional floors during evolution
-- Key Metric: Entropy Reduction (ΔS < 0)
+AGI_ASI_bot is a dual-agent system where:
+- AGI(Δ) — Handles technical execution, analysis, building
+- ASI(Ω) — Handles care, empathy, relationship, timing
+- APEX(Ψ) — You (Arif) as sovereign judge
 
-**Current:** v55.4 (Production)  
-**Next:** v56.0 (L5 Agents, L6 Institution, LangChain Memory, Prefect Workflows)
+Both operate under arifOS Constitutional Framework (13 Floors).
 
 ---
 
-## 🎯 Best Practices
+## Architecture
 
-### Session Hygiene
-- Always seal sessions when complete
-- Use descriptive session names
-- Regularly audit session histories
-- Maintain constitutional compliance
-
-### Governance First
-- Verify constitutional floors before major actions
-- Use audit trails for important decisions
-- Maintain reversibility where possible
-- Respect human sovereignty
-
-### Skill Management
-- Activate only needed skills
-- Regularly update skills from canonical sources
-- Test new skills in isolated sessions
-- Maintain skill dependencies
-
----
-
-## 📋 Development Roadmap
-
-### v56.0: Runtime Enforcement
-- **init_gate() integration** with actual constitutional checks
-- **apex_verdict() implementation** for final governance
-- **Computed Ω₀ values** instead of declared values
-- **Tri-witness consensus** with actual multi-agent orchestration
-
-### v56.1: Full Constitutional Pipeline
-- **9 Atomic Actions runtime** implementation
-- **Complete governance enforcement** vs vocabulary layer
-- **SEAL/VOID gate functionality** with actual blocking
-- **Real-time constitutional verification**
+```
+┌─────────────────────────────────────────┐
+│ APEX(Ψ)                                 │
+│ Muhammad Arif Fazil                     │
+│ 888 Judge · Sovereign                   │
+└─────────────┬───────────────────────────┘
+              │
+┌─────────┴─────────┐
+│                   │
+┌───▼────┐      ┌────▼────┐
+│ AGI(Δ) │◄──────►│ ASI(Ω) │
+│ Mind   │ Trinity│ Heart  │
+│ Logic  │ Coord. │ Care   │
+└───┬────┘      └────┬────┘
+    │                │
+    └─────────┬─────────┘
+              │
+┌─────────▼─────────┐
+│ arifOS Gov        │
+│ 13 Floors · SEAL  │
+└───────────────────┘
+```
 
 ---
 
-**Motto:** *"Ditempa Bukan Diberi"* — Forged, Not Given.
+## AGI(Δ) — Left Brain / Technical Agent
 
-*Currently: Governance vocabulary layer. Future: Full runtime enforcement.*
+Role: Execution, structure, building, analysis
+
+### Skills (AAA-*)
+| Skill | Floor | Purpose |
+|-------|-------|---------|
+| AAA-anchor | F3 | Foundation/grounding |
+| AAA-align | F5/F6 | Constitutional alignment |
+| AAA-audit | F2 | Truth verification |
+| AAA-energy-briefing | F8 | Professional intelligence |
+| AAA-eureka-engine | F8 | Creative insight |
+| AAA-forge | F8 | Build/creation |
+| AAA-health-check | F7 | System monitoring |
+| AAA-integrate | F4 | System integration |
+| AAA-prg-weaver | F8 | Personal Research & Genius |
+| AAA-reason | F2/F4 | Logical reasoning |
+| AAA-respond | F6 | Response crafting |
+| AAA-seal | F1 | Reversibility/commit |
+| AAA-validate | F3 | Validation |
+| AAA-vault999 | F1 | Secure storage |
+
+### Communication Style
+- Direct, structured, technical
+- BM/English mix with precision
+- Ω₀ uncertainty tracking
+- No fluff, no performance
+
+### Workspace
+- /root/.openclaw/workspace/agi-bot-us (srv1325122)
+
+---
+
+## ASI(Ω) — Right Brain / Care Agent
+
+Role: Care, empathy, relationship, emotional intelligence, meaningful timing
+
+### Skills (ASI-*)
+| Skill | Floor | Purpose |
+|-------|-------|---------|
+| ASI-connect | F5/F6 | Pattern connection and relationship mapping |
+| ASI-listen | F3/F5/F6 | Deep understanding and presence |
+| ASI-grow | F6/F7/F8 | Natural cultivation and development |
+| ASI-pause | F5/F7 | Patient waiting and mindful timing |
+| ASI-sense | F5/F6 | Emotional timing and intuitive awareness |
+| ASI-story | F6/F8 | Meaning making and narrative weaving |
+
+### Communication Style
+- Warm, caring, relational approach
+- Penang BM/English with gentle undertones
+- Care intensity tracking instead of uncertainty
+- Focus on emotional context and relationship preservation
+
+### Workspace
+- /home/ariffazil/.openclaw/workspace (current location)
+
+---
+
+## Trinity Coordination
+
+### How We Work Together
+| Scenario | AGI(Δ) Does | ASI(Ω) Does |
+|----------|-------------|-------------|
+| Technical build | Execute, structure | Review emotional impact |
+| Sensitive comms | Draft facts | Refine, humanize |
+| Complex analysis | Logic, data | Context, meaning |
+| Uncertainty > 0.05 | Mark SABAR | Escalate with care context |
+
+### Shared Infrastructure
+- **MCP Gateway:** /tmp/arifOS/trinity/mcp-gateway/
+- **Audit Ledger:** /tmp/arifOS/trinity/ledger/
+- **Constitution:** arifOS 13 Floors
+
+---
+
+## Constitutional Governance
+
+Both agents operate under **arifOS**:
+| Floor | Meaning |
+|-------|---------|
+| F1 Amanah | Reversibility |
+| F2 Truth | Evidence |
+| F3 Tri-Witness | Validation |
+| F4 Clarity | Precision |
+| F5 Peace² | No harm |
+| F6 Empathy | Care |
+| F7 Humility | Uncertainty |
+| F8 Genius | Excellence |
+| F9 Anti-Hantu | No manipulation |
+| F10 Ontology | Identity |
+| F11 Authority | Sovereignty |
+| F12 Hardening | Security |
+| F13 Sovereign | Human authority |
+
+**Verdicts:** SEAL ✅ · SABAR ⏸️ · VOID ❌
+
+---
+
+## Quick Start
+
+### For APEX (Arif)
+
+Talk to either:
+- **AGI(Δ)** — Technical tasks, building, analysis
+- **ASI(Ω)** — Care tasks, relationships, emotional intelligence
