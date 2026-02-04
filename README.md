@@ -1,8 +1,47 @@
-# AGI-bot — Constitutional AI Governance System
+# AGI-bot — Constitutional AI Governance Layer (Work in Progress)
 
-**A production-ready fork of OpenClaw with arifOS Constitutional Framework integration.**
+**A fork of OpenClaw with arifOS Constitutional Framework integration.**
 
-*Enables constitutional AI governance through the AGI·ASI·APEX Trinity architecture.*
+*A governance layer for AI assistants, not AGI itself.*
+
+---
+
+## ⚠️ CRITICAL DISCLAIMER
+
+**This is NOT artificial general intelligence.** This is a governance layer built on top of OpenClaw that adds constitutional guardrails to standard LLMs (Claude, GPT, etc.).
+
+**What you get:**
+- OpenClaw's AI agent capabilities (file ops, shell access, messaging)
+- arifOS constitutional vocabulary layer
+- 13-floor safety framework (currently vocabulary-based)
+- Trinity-inspired processing concepts
+
+**What you DON'T get:**
+- Artificial General Intelligence
+- Self-aware or sentient systems
+- Revolutionary reasoning capabilities
+- AGI-level intelligence
+
+---
+
+## 🚀 What Actually Works
+
+### ✅ OpenClaw Foundation
+- **Messaging**: WhatsApp, Telegram, Discord, Slack integration
+- **System Access**: File operations, shell commands, web browsing
+- **Persistence**: Memory across sessions
+- **Automation**: Scheduled tasks and workflows
+
+### ✅ arifOS Vocabulary Layer
+- **Constitutional Floors**: F1-F13 concepts applied to responses
+- **Trinity Processing**: Logic (AGI), Safety (ASI), Judgment (APEX) concepts
+- **Governance Vocabulary**: Constitutional language and frameworks
+
+### ⚠️ What's Coming (v56.0+)
+- **Runtime Enforcement**: Actual constitutional gate checking
+- **Computed Values**: Real Ω₀ calculation vs declared values
+- **Tri-Witness**: Actual multi-agent consensus
+- **Full Pipeline**: 9 Atomic Actions runtime implementation
 
 ---
 
@@ -241,6 +280,18 @@ openclaw action seal --commit --authority constitutional_governance --vault vaul
 
 ---
 
+## ⚠️ SECURITY CONSIDERATIONS
+
+OpenClaw systems carry inherent security risks:
+- **Shell Access**: Can execute arbitrary commands
+- **File Operations**: Can read/write system files  
+- **API Keys**: May expose credentials if misconfigured
+- **Prompt Injection**: Vulnerable to sophisticated attacks
+
+**Only deploy in trusted environments with proper security measures.**
+
+---
+
 ## 🛡️ Constitutional Governance
 
 ### The 9 Atomic Actions Flow
@@ -372,28 +423,6 @@ openclaw action seal --input "commit action" --vault vault999
 
 ---
 
-## 🎯 Best Practices
-
-### Session Hygiene
-- Always seal sessions when complete
-- Use descriptive session names
-- Regularly audit session histories
-- Maintain constitutional compliance
-
-### Governance First
-- Verify constitutional floors before major actions
-- Use audit trails for important decisions
-- Maintain reversibility where possible
-- Respect human sovereignty
-
-### Skill Management
-- Activate only needed skills
-- Regularly update skills from canonical sources
-- Test new skills in isolated sessions
-- Maintain skill dependencies
-
----
-
 ## 🗺️ Complete Stack Architecture
 
 <div align="center">
@@ -428,7 +457,44 @@ openclaw action seal --input "commit action" --vault vault999
 
 ---
 
+## 🎯 Best Practices
+
+### Session Hygiene
+- Always seal sessions when complete
+- Use descriptive session names
+- Regularly audit session histories
+- Maintain constitutional compliance
+
+### Governance First
+- Verify constitutional floors before major actions
+- Use audit trails for important decisions
+- Maintain reversibility where possible
+- Respect human sovereignty
+
+### Skill Management
+- Activate only needed skills
+- Regularly update skills from canonical sources
+- Test new skills in isolated sessions
+- Maintain skill dependencies
+
+---
+
+## 📋 Development Roadmap
+
+### v56.0: Runtime Enforcement
+- **init_gate() integration** with actual constitutional checks
+- **apex_verdict() implementation** for final governance
+- **Computed Ω₀ values** instead of declared values
+- **Tri-witness consensus** with actual multi-agent orchestration
+
+### v56.1: Full Constitutional Pipeline
+- **9 Atomic Actions runtime** implementation
+- **Complete governance enforcement** vs vocabulary layer
+- **SEAL/VOID gate functionality** with actual blocking
+- **Real-time constitutional verification**
+
+---
+
 **Motto:** *"Ditempa Bukan Diberi"* — Forged, Not Given.
 
-*Every action governed by constitutional principles.*
-
+*Currently: Governance vocabulary layer. Future: Full runtime enforcement.*
