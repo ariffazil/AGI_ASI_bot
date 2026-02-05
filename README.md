@@ -1,5 +1,7 @@
 # AGI_ASI_bot — Trinity Intelligence System
 
+![Trinity Logo](assets/logos/trinity-logo-2026.png)
+
 > **The Paradox Engine: Non-Stationary Objectives under Stationary Constraints**
 > 
 > 🔷 AGI(Δ) · 🔶 ASI(Ω) · ⚪ APEX(Ψ)
