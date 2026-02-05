@@ -1,6 +1,6 @@
 # AGI_ASI_bot — Trinity Intelligence System
 
-![Trinity Logo](assets/logos/trinity-triangle-logo.png)
+![Trinity Logo](assets/logos/trinity-3d-glow-logo.png)
 
 > **The Paradox Engine: Non-Stationary Objectives under Stationary Constraints**
 > 
