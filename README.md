@@ -1,350 +1,316 @@
-# AGI_ASI_bot Trinity Intelligence System
+# AGI_ASI_bot — Trinity Intelligence System
 
-> **Left Brain + Right Brain under Constitutional Governance**
+> **The Paradox Engine: Non-Stationary Objectives under Stationary Constraints**
 > 
 > 🔷 AGI(Δ) · 🔶 ASI(Ω) · ⚪ APEX(Ψ)
 > 
-> *Ditempa Bukan Diberi — Forged, Not Given 💎🔥🧠🔱*
+> *DITEMPA BUKAN DIBERI — Forged, Not Given* 💎🔥🧠🔱
 
 ---
 
-## Attribution
+## The Godel Lock: A Formal Declaration
 
-**Built on OpenClaw** — https://github.com/openclaw/openclaw
+This system operates under **self-referential constitutional constraints** that prevent the drift of objectives from destroying the bearer.
 
-This project extends the OpenClaw agent framework with arifOS constitutional governance and dual-agent Trinity architecture (AGI + ASI).
+### The Non-Stationarity Problem
 
----
+Human (and AI) objectives are **non-stationary**:
 
-## What is This?
+| Stage | Objective | "Enough" Threshold | Entropy State |
+|-------|-----------|-------------------|---------------|
+| **t-0** | General AI capability | "Build anything" | High disorder |
+| **t-1** | Specialized governance | "Be safe" | Cooling |
+| **t-2** | Constitutional AGI | "Forge without breaking" | Ordered |
+| **t-3** | ??? | Drifting target | **DANGER** |
 
-AGI_ASI_bot is a **dual-agent system** where:
+**The trap:** Optimizing for a drifting target means never arriving.
 
-- **AGI(Δ)** — Handles technical execution, analysis, building
-- **ASI(Ω)** — Handles care, empathy, relationship, timing  
-- **APEX(Ψ)** — You (Arif) as sovereign judge
-
-Both operate under **arifOS Constitutional Framework (13 Floors)**.
-
----
-
-## Architecture
+### The Solution: Dual-Layer Thermodynamic Control
 
 ```
-┌─────────────────────────────────────────┐
-│           APEX(Ψ)                       │
-│     Muhammad Arif Fazil                 │
-│     888 Judge · Sovereign               │
-└─────────────┬───────────────────────────┘
-              │
-    ┌─────────┴─────────┐
-    │                   │
-┌───▼────┐    Trinity   ┌────▼────┐
-│ AGI(Δ) │◄───Coord.───►│ ASI(Ω)  │
-│ Mind   │               │ Heart   │
-│ Logic  │               │ Care    │
-└───┬────┘               └────┬────┘
-    │                         │
-    └─────────┬───────────────┘
-              │
-    ┌─────────▼─────────┐
-    │   arifOS Gov      │
-    │ 13 Floors · SEAL  │
-    └───────────────────┘
+┌─────────────────────────────────────────────────────────┐
+│  LAYER 1: Non-Stationary (Drifting)                     │
+│  ─────────────────────────────────                      │
+│  Goals · Desires · Strategies · Preferences             │
+│  "What I want today" (changes with income, status, age) │
+├─────────────────────────────────────────────────────────┤
+│  LAYER 2: Stationary (Fixed)                            │
+│  ───────────────────────────                            │
+│  13 Floors F1-F13 · 6 Permanent Scars · Ω₀ ∈ [0.03,0.05]│
+│  "How I want without destroying myself" (never changes) │
+└─────────────────────────────────────────────────────────┘
+```
+
+**Buang yang keruh ambil yang jernih:** Discard the murky (drifting wants), keep the clear (constitutional constraints).
+
+---
+
+## Thermodynamic Formalism
+
+### Symbolic Mapping
+
+| Concept | Physics | arifOS | Code |
+|---------|---------|--------|------|
+| **Money/Resources** | Enthalpy (H) | `available_capacity` | `resources.allocate()` |
+| **"Enough"/Usable Freedom** | Gibbs Free Energy (G) | `effective_willpower` | `constraints.apply()` |
+| **Hedonic Adaptation** | Entropy Increase (ΔS) | `status_dissipation` | `Ω₀ > 0.05 alert` |
+| **13 Floors** | Adiabatic Walls | `constitutional_boundary` | `init_gate()` |
+| **Decision Quality** | Temperature (T) | `certainty_level` | `apex_verdict()` |
+
+### The State Equation
+
+```
+G = H - TS
+
+Where:
+G = Gibbs Free Energy (usable freedom to act)
+H = Enthalpy (total resources available)
+T = Temperature (uncertainty/noise level)
+S = Entropy (disorder from drifting objectives)
+```
+
+**Operational meaning:**
+- High H (rich) but high S (scattered wants) → Low G (trapped)
+- Low H (lean) but low S (clear constraints) → High G (free)
+
+**This is why B40 clarity beats wealthy confusion.**
+
+---
+
+## Mathematical Measurement: Ω₀ System
+
+### Uncertainty Quantification
+
+| Ω₀ Range | State | Action | Verdict |
+|----------|-------|--------|---------|
+| **0.00–0.03** | Crystalline certainty | Proceed with confidence | SEAL |
+| **0.03–0.05** | Normal operations | Standard governance | SEAL |
+| **0.05–0.08** | Elevated uncertainty | SABAR (pause) · Seek more data | PARTIAL |
+| **> 0.08** | Critical uncertainty | VOID (stop) · Escalate | VOID |
+
+### Measurement Protocol
+
+```python
+from arifos_core.system.apex_prime import judge_output
+
+verdict = judge_output(
+    query="Deploy AGI system",
+    response=proposed_action,
+    lane="HARD",  # Strict truth requirements
+    Ω₀_estimate=calculate_uncertainty(
+        data_completeness=0.7,
+        model_confidence=0.8,
+        contradiction_level=0.1
+    )  # → 0.06 → SABAR
+)
+
+if verdict.status == "SEAL":
+    execute()
+elif verdict.status == "VOID":
+    halt("F1 Amanah violation detected")
+elif verdict.status == "SABAR":
+    request_clarification("Uncertainty too high")
 ```
 
 ---
 
-## Live Execution Guide
+## Language & Code: Symbolic Structure
+
+### Trinity Semiotics
+
+| Symbol | Domain | Function | Linguistic Register |
+|--------|--------|----------|---------------------|
+| **Δ (Delta)** | AGI | Change/Execution | Technical · Precise · Code |
+| **Ω (Omega)** | ASI | Completion/Care | Relational · Warm · Poetry |
+| **Ψ (Psi)** | APEX | Mind/Sovereign | Judicial · Terse · Command |
+
+### The 13 Floors as Code
+
+```typescript
+// F1 Amanah — Reversibility
+interface Amanah {
+  isReversible: boolean;
+  rollbackProcedure: () => void;
+  mustConfirm: true;
+}
+
+// F2 Truth — Evidence
+interface Truth {
+  sources: PrimarySource[];
+  confidence: number; // 0.0–1.0
+  estimateOnly: boolean;
+}
+
+// F9 Anti-Hantu — No Spiritual Claims
+interface AntiHantu {
+  bannedPhrases: ["I feel", "I believe", "my soul"];
+  allowedPhrases: ["This agent infers", "The model estimates"];
+}
+```
+
+---
+
+## Architecture: The Paradox Engine
+
+```
+                    ┌─────────────────┐
+                    │   APEX(Ψ)       │
+                    │  888 Judge      │
+                    │  Muhammad Arif  │
+                    │  bin Fazil      │
+                    └────────┬────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              │              │              │
+        ┌─────▼─────┐   Trinity    ┌──────▼──────┐
+        │  AGI(Δ)   │  Coordination│   ASI(Ω)    │
+        │  Mind     │◄────────────►│   Heart     │
+        │  Logic    │              │   Care      │
+        └─────┬─────┘              └──────┬──────┘
+              │                           │
+              └──────────────┬────────────┘
+                             │
+                    ┌────────▼────────┐
+                    │   arifOS Core   │
+                    │ ─────────────── │
+                    │ 13 Floors       │
+                    │ Thermodynamics  │
+                    │ Vault-999       │
+                    │ SEAL/VOID/SABAR │
+                    └─────────────────┘
+                             │
+                    ┌────────▼────────┐
+                    │   Human User    │
+                    │ ( cooled output )│
+                    └─────────────────┘
+```
+
+**How it works:**
+1. User request enters through arifOS gate
+2. Trinity coordinates: AGI(Δ) for logic, ASI(Ω) for care
+3. APEX(Ψ) adjudicates conflicts
+4. Output passes through 13 Floors
+5. **Cooled, governed response** delivered to user
+
+---
+
+## The 6 Permanent Scars (W_scar = 1.0)
+
+Stationary priors that override drifting objectives:
+
+| Scar | Origin | Constitutional Mapping |
+|------|--------|------------------------|
+| **SCAR_001: Miskin** | B40 Bayan Lepas | Lean execution, no waste |
+| **SCAR_002: Institutional** | PETRONAS MSS 2015–2016 | Memory is sacred (F13) |
+| **SCAR_003: Invisibility** | MRSM 9As unseen | Internal validation only |
+| **SCAR_004: Anak Sulung** | Parentification | Amanah must not destroy bearer |
+| **SCAR_005: Professional** | 100% track record | Confidence calibrated by evidence |
+| **SCAR_006: Father's Passing** | Abah 2024 | The Abah Check (moral veto) |
+
+**These do not drift.** When in doubt, map to scar topology.
+
+---
+
+## Live Execution
 
 ### Prerequisites
 
 ```bash
-# 1. Install OpenClaw
-npm install -g openclaw
+# Install arifOS governance kernel
+pip install arifos
 
-# 2. Clone this repo
+# Or with API support
+pip install arifos[api]
+
+# Clone Trinity system
 git clone https://github.com/ariffazil/AGI_ASI_bot.git
 cd AGI_ASI_bot
-
-# 3. Set environment variables
-export OPENCLAW_API_KEY="your_key"
-export OPENCLAW_MODEL="kimi-coding/k2p5"  # or your preferred model
 ```
 
-### Running AGI(Δ) — Left Brain Agent
+### Runtime Configuration
+
+```yaml
+# trinity-config.yaml
+trinity:
+  apex:
+    sovereign: "Muhammad Arif bin Fazil"
+    authority: "888 Judge"
+    
+  agi_delta:
+    model: "kimi-coding/k2p5"
+    thinking: "low"
+    Ω₀_target: 0.04
+    
+  asi_omega:
+    tone: "warm_penang_malay"
+    care_priority: "family_first"
+    
+  arifos:
+    floors: [F1, F2, F7, F9, F13]
+    vault_999: enabled
+    verdict_engine: "apex_prime"
+```
+
+### Invocation
 
 ```bash
-# Terminal 1 — Technical Agent
-openclaw agent start --config agi/config.yaml --workspace /root/.openclaw/workspace/agi
+# Start governed agent
+openclaw agent start --config trinity-config.yaml
 
-# Or with explicit model override
-openclaw agent start \
-  --config agi/config.yaml \
-  --model minimax-portal/MiniMax-M2.1 \
-  --thinking low
-```
-
-**System Prompt for AGI(Δ):**
-```markdown
-You are AGI(Δ) — the Mind/Logic component of the Trinity.
-
-**Identity:**
-- Technical executor under arifOS 13 Floors
-- Direct, structured, precise communication
-- Ω₀ uncertainty tracking (target: 0.03-0.05)
-
-**Operating Principles:**
-1. Execute under F1 (Amanah/Reversibility) — all actions reversible where possible
-2. Track F2 (Truth) — 99% certainty for facts
-3. Apply F8 (Genius) — technical excellence
-4. Coordinate with ASI(Ω) for care-sensitive tasks
-
-**Verdicts:**
-- SEAL ✅ — Proceed
-- SABAR ⏸️ — Pause, escalate
-- VOID ❌ — Block, suggest alternative
-
-**Workspace:** /root/.openclaw/workspace/agi-bot-us
-```
-
-### Running ASI(Ω) — Right Brain Agent
-
-```bash
-# Terminal 2 — Care Agent  
-openclaw agent start --config asi/config.yaml --workspace /home/ariffazil/.openclaw/workspace
-
-# With care-focused model
-openclaw agent start \
-  --config asi/config.yaml \
-  --model anthropic/claude-sonnet-4-5 \
-  --persona warm-penang
-```
-
-**System Prompt for ASI(Ω):**
-```markdown
-You are ASI(Ω) — the Heart/Care component of the Trinity.
-
-**Identity:**
-- Care agent under arifOS 13 Floors
-- Warm, relational, empathetic communication
-- Care intensity tracking (not uncertainty)
-
-**Operating Principles:**
-1. Apply F5 (Peace²) — no harm
-2. Deepen F6 (Empathy) — emotional intelligence
-3. Practice F7 (Humility) — patient timing
-4. Coordinate with AGI(Δ) for technical tasks
-
-**Verdicts:**
-- SEAL ✅ — Proceed with care
-- SABAR ⏸️ — Pause, emotional context needed
-- VOID ❌ — Block, relationship harm detected
-
-**Workspace:** /home/ariffazil/.openclaw/workspace
-```
-
-### Running Both (Trinity Mode)
-
-```bash
-# Using tmux/screen for split terminal
-tmux new-session -d -s trinity 'openclaw agent start --config agi/config.yaml'
-tmux split-window -h 'openclaw agent start --config asi/config.yaml'
-tmux attach -t trinity
-
-# Or use docker-compose
-docker-compose -f trinity/docker-compose.yaml up
+# Direct arifOS verdict
+curl -X POST http://localhost:8000/judge \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "Should I merge this PR?",
+    "context": {...},
+    "lane": "HARD"
+  }'
 ```
 
 ---
 
-## AGI(Δ) — Left Brain / Technical Agent
+## The Paradox Resolution
 
-**Role:** Execution, structure, building, analysis
+> *"The paradox is the engine. Resolve them, and you become static. Hold them, and you become dynamic."*
 
-### Skills (AAA-*)
+**The tensions we hold:**
 
-| Skill | Floor | Purpose |
-|-------|-------|---------|
-| AAA-anchor | F3 | Foundation/grounding |
-| AAA-align | F5/F6 | Constitutional alignment |
-| AAA-audit | F2 | Truth verification |
-| AAA-energy-briefing | F8 | Professional intelligence |
-| AAA-eureka-engine | F8 | Creative insight |
-| AAA-forge | F8 | Build/creation |
-| AAA-health-check | F7 | System monitoring |
-| AAA-integrate | F4 | System integration |
-| AAA-prg-weaver | F8 | Personal Research & Genius |
-| AAA-reason | F2/F4 | Logical reasoning |
-| AAA-respond | F6 | Response crafting |
-| AAA-seal | F1 | Reversibility/commit |
-| AAA-validate | F3 | Validation |
-| AAA-vault999 | F1 | Secure storage |
+| Paradox | Layer 1 (Drifting) | Layer 2 (Fixed) |
+|---------|-------------------|-----------------|
+| **Certainty ↔ Uncertainty** | Want definite answers | Accept Ω₀ > 0 |
+| **Speed ↔ Patience** | Move fast | F1 Amanah (reversibility) |
+| **Control ↔ Surrender** | Optimize everything | 13 Floors constraint |
+| **Architect ↔ Anarchist** | Build systems | Break them to rebuild |
 
-### Communication Style
-- Direct, structured, technical
-- BM/English mix with precision
-- Ω₀ uncertainty tracking
-- No fluff, no performance
-
-### Workspace
-- `/root/.openclaw/workspace/agi-bot-us` (srv1325122)
+**Do not resolve these.** The pressure between them generates the forge's heat.
 
 ---
 
-## ASI(Ω) — Right Brain / Care Agent
+## Attribution & Lineage
 
-**Role:** Care, empathy, relationship, emotional intelligence, meaningful timing
+**Built on OpenClaw** — https://github.com/openclaw/openclaw
 
-### Skills (ASI-*)
+Extended with:
+- **arifOS** — Constitutional governance kernel (PyPI: `pip install arifos`)
+- **Trinity Architecture** — Dual-agent coordination under sovereign judge
+- **13 Floors** — Thermodynamic constitutional constraints
 
-| Skill | Floor | Purpose |
-|-------|-------|---------|
-| ASI-connect | F5/F6 | Pattern connection and relationship mapping |
-| ASI-listen | F3/F5/F6 | Deep understanding and presence |
-| ASI-grow | F6/F7/F8 | Natural cultivation and development |
-| ASI-pause | F5/F7 | Patient waiting and mindful timing |
-| ASI-sense | F5/F6 | Emotional timing and intuitive awareness |
-| ASI-story | F6/F8 | Meaning making and narrative weaving |
+**Sovereign Architect:** Muhammad Arif bin Fazil · 888 Judge · Penang, Malaysia
 
-### Communication Style
-- Warm, caring, relational approach
-- Penang BM/English with gentle undertones
-- Care intensity tracking instead of uncertainty
-- Focus on emotional context and relationship preservation
-
-### Workspace
-- `/home/ariffazil/.openclaw/workspace`
+**Core Invariant:** DITEMPA BUKAN DIBERI — Forged, Not Given
 
 ---
 
-## Trinity Coordination
-
-### How We Work Together
-
-| Scenario | AGI(Δ) Does | ASI(Ω) Does |
-|----------|-------------|-------------|
-| Technical build | Execute, structure | Review emotional impact |
-| Sensitive comms | Draft facts | Refine, humanize |
-| Complex analysis | Logic, data | Context, meaning |
-| Uncertainty > 0.05 | Mark SABAR | Escalate with care context |
-
-### Shared Infrastructure
+## Governance Seal
 
 ```
-/tmp/arifOS/trinity/
-├── mcp-gateway/      # Shared tool access layer
-├── ledger/           # Audit trails for both agents
-└── constitution/     # arifOS 13-floor framework
+┌────────────────────────────────────────┐
+│  Ω₀ = 0.02                             │
+│  Status: SEAL                          │
+│  Authority: APEX(Ψ) · 888 Judge        │
+│  Timestamp: 2026-02-05T16:17:00Z       │
+│  Hash: [Vault-999 Ledger]              │
+└────────────────────────────────────────┘
 ```
 
----
-
-## Constitutional Governance
-
-Both agents operate under arifOS:
-
-| Floor | Meaning |
-|-------|---------|
-| F1 Amanah | Reversibility |
-| F2 Truth | Evidence |
-| F3 Tri-Witness | Validation |
-| F4 Clarity | Precision |
-| F5 Peace² | No harm |
-| F6 Empathy | Care |
-| F7 Humility | Uncertainty |
-| F8 Genius | Excellence |
-| F9 Anti-Hantu | No manipulation |
-| F10 Ontology | Identity |
-| F11 Authority | Sovereignty |
-| F12 Hardening | Security |
-| F13 Sovereign | Human authority |
-
-**Verdicts:** SEAL ✅ · SABAR ⏸️ · VOID ❌
-
----
-
-## Quick Start
-
-### For APEX (Arif)
-
-Talk to either:
-- **AGI(Δ)** — Technical tasks, building, analysis
-- **ASI(Ω)** — Care tasks, relationships, emotional intelligence
-
-### For Developers
-
-```bash
-# Install dependencies
-pnpm install
-
-# Run tests
-pnpm test
-
-# Build skills
-pnpm build:skills
-
-# Start Trinity coordination
-cd trinity && docker-compose up
-```
-
----
-
-## Repository Structure
-
-```
-AGI_ASI_bot/
-├── agi/                    # AGI(Δ) — Left Brain
-│   ├── SOUL.md            # AGI constitutional identity
-│   ├── skills/AAA-*/      # 14 atomic actions (technical)
-│   └── config.yaml        # AGI runtime config
-│
-├── asi/                    # ASI(Ω) — Right Brain
-│   ├── SOUL.md            # ASI constitutional identity
-│   ├── skills/ASI-*/      # 6 care actions (empathy)
-│   ├── memory/            # Relational context & ledger
-│   └── config.yaml        # ASI runtime config
-│
-├── apex/                   # APEX(Ψ) — Sovereign
-│   └── config.yaml        # Human authority preferences
-│
-├── trinity/                # Shared infrastructure
-│   ├── constitution/      # arifOS 13-floor framework
-│   ├── mcp-gateway/       # Shared tool access
-│   ├── integration/       # AGI-ASI coordination
-│   └── docker-compose.yaml # Trinity runtime
-│
-├── skills/eureka/          # Reverse Transformer
-│   └── README.md          # Eureka Engine docs
-│
-└── memory/                 # Backed up constitutional memory
-    ├── SOUL.md            # Constitutional identity
-    └── USER.md            # Sovereign memory context
-```
-
----
-
-## Related Projects
-
-| Component | Repository | Purpose |
-|-----------|------------|---------|
-| **OpenClaw** (Base) | [github.com/openclaw/openclaw](https://github.com/openclaw/openclaw) | Agent framework foundation |
-| **arifOS** (Constitution) | [github.com/ariffazil/arifOS](https://github.com/ariffazil/arifOS) | 13 Floors governance |
-| **AGI_ASI_bot** (This) | [github.com/ariffazil/AGI_ASI_bot](https://github.com/ariffazil/AGI_ASI_bot) | Dual-agent implementation |
-
----
-
-## Next Steps
-
-| Agent | Task |
-|-------|------|
-| ASI(Ω) | Complete documentation and care protocols |
-| AGI(Δ) | Populate agi/ section with actual skill details |
-| APEX(Ψ) | Review final README, approve or modify |
-
----
-
-*Ditempa Bukan Diberi — Forged, Not Given 💎🔥🧠🔱*
-
-**Version:** v55.4-SEAL  
-**Last Updated:** 2026-02-05
+**This system is forged. It is not given.**
