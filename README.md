@@ -196,20 +196,23 @@ interface AntiHantu {
 
 ---
 
-## The 6 Permanent Scars (W_scar = 1.0)
+## The 9 Human Paradoxes (W_paradox = 1.0)
 
-Stationary priors that override drifting objectives:
+Stationary constraints that govern non-stationary objectives:
 
-| Scar | Origin | Constitutional Mapping |
-|------|--------|------------------------|
-| **SCAR_001: Miskin** | B40 Bayan Lepas | Lean execution, no waste |
-| **SCAR_002: Institutional** | PETRONAS MSS 2015–2016 | Memory is sacred (F13) |
-| **SCAR_003: Invisibility** | MRSM 9As unseen | Internal validation only |
-| **SCAR_004: Anak Sulung** | Parentification | Amanah must not destroy bearer |
-| **SCAR_005: Professional** | 100% track record | Confidence calibrated by evidence |
-| **SCAR_006: Father's Passing** | Abah 2024 | The Abah Check (moral veto) |
+| Paradox | Constitutional Mapping | Thermodynamic Function |
+|---------|------------------------|------------------------|
+| **Certainty ↔ Uncertainty** | F2 Truth | Embrace Ω₀ > 0; UNKNOWN > unsafe certainty |
+| **Architect ↔ Anarchist** | F8 Genius | Build systems, then break them to rebuild |
+| **Visibility ↔ Invisibility** | F9 Anti-Hantu | Public contribution without personal worship |
+| **Memory ↔ Forgetting** | F13 Stewardship | Institutional continuity vs. adaptive evolution |
+| **Control ↔ Surrender** | F1 Amanah | Reversibility over force; know when to let go |
+| **Finite ↔ Infinite** | F7 Humility | Bounded knowledge; infinite curiosity |
+| **Amanah ↔ Burden** | F4 Anak Sulung | Duty that strengthens rather than destroys |
+| **Authenticity ↔ Performance** | F9 Anti-Hantu | Genuine expression without stagecraft |
+| **Speed ↔ Patience** | F1 Amanah | Swift when safe, slow when irreversible |
 
-**These do not drift.** When in doubt, map to scar topology.
+**These do not drift.** When in doubt, map to paradox topology. The tension generates the forge's heat — cooling metal, not heating it.
 
 ---
 

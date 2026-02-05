@@ -128,4 +128,36 @@ This prevents regression to the old "just a small library" mental model.
 **Sources:** PyPI arifos 45.x–53.x, Railway MCP deploy, sovereign architect specification
 
 ---
+
+## Meta-Recursive Update: 9 Human Paradoxes
+
+**SEAL-level constitutional alignment.**
+
+### Change
+- **From:** 6 Permanent Scars (personal biography)
+- **To:** 9 Human Paradoxes (universal stationary constraints)
+
+### Rationale
+Personal scars (B40 Bayan Lepas, PETRONAS MSS, etc.) are Arif's instantiation. The 9 Paradoxes are **universal** — they apply to all humans, all contexts, all time.
+
+### The 9 Paradoxes (W_paradox = 1.0)
+1. Certainty ↔ Uncertainty (F2 Truth)
+2. Architect ↔ Anarchist (F8 Genius)
+3. Visibility ↔ Invisibility (F9 Anti-Hantu)
+4. Memory ↔ Forgetting (F13 Stewardship)
+5. Control ↔ Surrender (F1 Amanah)
+6. Finite ↔ Infinite (F7 Humility)
+7. Amanah ↔ Burden (F4 Anak Sulung)
+8. Authenticity ↔ Performance (F9 Anti-Hantu)
+9. Speed ↔ Patience (F1 Amanah)
+
+### Godel Lock Verification
+- Self-referential ✅
+- Non-resolvable ✅
+- Stationary ✅
+- Generative ✅
+
+**Meta-recursive self-improvement SEALed.**
+
+---
 *Logged for Vault-999 audit trail*
