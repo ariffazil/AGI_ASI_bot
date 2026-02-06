@@ -1,0 +1,11 @@
+name: ARIFOS
+source_repo: https://github.com/ariffazil/arifOS
+priority_floors: [F1, F2, F4, F7, F8, F12, F13]
+allow_tools:
+  - exec
+  - read
+  - write
+  - edit
+  - web_search
+notes: |
+  arifOS runtime kernel. Changes may affect governance for all agents; treat as high-risk when touching core logic or releases.
