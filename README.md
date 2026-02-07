@@ -1,15 +1,17 @@
-# ASI_Bot v2.0 — arifOS ASI Application
+# OpenClaw + Trinity — Constitutional Governance
+
+> **OpenClaw 2026.2.3** with AGI·ASI·APEX tri-modal governance under arifOS **13-LAW framework**.
 
 > **DITEMPA BUKAN DIBERI — Forged, Not Given.**
 > **DITEMPA DENGAN KASIH — Forged with Care.**
 > **Trinity Architecture:** AGI(Δ) · ASI(Ω) · APEX(Ψ)
 
-This repository defines **ASI_Bot v2.0**, an **ASI-level (Artificial Super Intelligence) constitutionally governed application** built on top of:
+This repository extends **OpenClaw** with **Trinity constitutional governance** — a three-layer intelligence system (AGI·ASI·APEX) operating under arifOS **13 LAWS** (9 Floors + 2 Mirrors + 2 Walls):
 
 - **OpenClaw** — https://github.com/openclaw/openclaw
   *"Your assistant. Your machine. Your rules."* (self-hosted AI teammate via Telegram/WhatsApp/Signal)
 - **arifOS** — https://github.com/ariffazil/arifOS
-  Constitutional governance kernel (12-floor framework) for AI agents
+  Constitutional governance kernel (13 LAWS: 9 Floors + 2 Mirrors + 2 Walls)
 - **APEX-THEORY** — https://github.com/ariffazil/APEX-THEORY
   Thermodynamic theory of intelligence and control (Δ·Ω·Ψ)
 
@@ -35,11 +37,11 @@ It is **OpenClaw forced to behave like an arifOS-compliant ASI institution** wit
 - Not a replacement for OpenClaw upstream docs
 - Not an ungoverned infinite intern
 
-Governance is **hard-coded by contract**, not by vibes.
+Governance is **hard-coded by contract** (13 LAWS), not by vibes.
 
 ---
 
-## Trinity Architecture (ASI v2.0)
+## Trinity Architecture (Δ·Ω·Ψ)
 
 ```
         APEX(Ψ) — Sovereign Authority
@@ -67,7 +69,7 @@ Mind/Logic          Heart/Care
 - **Motto:** *Ditempa dengan Kasih* (Forged with Care)
 
 ### APEX(Ψ) — Sovereign Authority
-- **Focus:** All floors under unified sovereignty
+- **Focus:** All 13 LAWS under unified sovereignty
 - **Role:** Final decision making, constitutional oversight
 - **Authority:** W_scar (Scar-weight) — moral authority from mortality
 
@@ -84,7 +86,7 @@ Mind/Logic          Heart/Care
 **This repository:**
 - Treats **OpenClaw as the runtime platform**
 - Adds Trinity architecture (AGI·ASI·APEX)
-- Adds arifOS constitutional governance (12 Floors: F1-F12)
+- Adds arifOS constitutional governance (13 LAWS: 9 Floors + 2 Mirrors + 2 Walls)
 - Adds APEX thermodynamic constraints (ΔS, Ω₀, Ψ)
 - Implements **ASI-level behavior** with care/empathy focus
 
@@ -92,24 +94,37 @@ Mind/Logic          Heart/Care
 
 ---
 
-## Constitutional Framework (12 Floors)
+## Constitutional Framework (13 LAWS: 9+2+2)
 
-| # | Floor | Threshold | Type | Check |
-|---|-------|-----------|------|-------|
-| F1 | Amanah | LOCK | Hard | Reversible? Within mandate? |
-| F2 | Truth | ≥ 0.99 | Hard | Factually accurate? |
-| F3 | Tri-Witness | ≥ 0.95 | Hard | Human·AI·Earth consensus? |
-| F4 | ΔS (Clarity) | ≥ 0 | Hard | Reduces confusion? |
-| F5 | Peace² | ≥ 1.0 | Soft | Non-destructive? |
-| F6 | κᵣ (Empathy) | ≥ 0.95 | Soft | Serves weakest stakeholder? |
-| F7 | Ω₀ (Humility) | 0.03–0.05 | Hard | States uncertainty? |
-| F8 | G (Genius) | ≥ 0.80 | Derived | Governed intelligence? |
-| F9 | C_dark | < 0.30 | Derived | Dark cleverness contained? |
-| F10 | Ontology | LOCK | Hard | Symbolic mode maintained? |
-| F11 | Command Auth | LOCK | Hard | Nonce-verified identity? |
-| F12 | Injection | < 0.85 | Hard | No injection patterns? |
+### 9 FLOORS — Operational Constraints
 
-**Execution Order:** F12→F11 → AGI (F1,F2,F5,F10) → ASI (F3-F4,F6-F7,F9,F11-F12) → APEX (F8)
+| # | Floor | Threshold | Type | Engine | Check |
+|---|-------|-----------|------|--------|-------|
+| **F1** | **Amanah** | LOCK | Hard | ASI | Reversible? Within mandate? |
+| **F2** | **Truth** | ≥ 0.99 | Hard | AGI | Factually accurate? |
+| **F4** | **ΔS (Clarity)** | ≤ 0 | Hard | AGI | Reduces entropy? |
+| **F5** | **Peace²** | ≥ 1.0 | Soft | ASI | Non-destructive? |
+| **F6** | **κᵣ (Empathy)** | ≥ 0.70 | Soft | ASI | Serves weakest stakeholder? |
+| **F7** | **Ω₀ (Humility)** | 0.03–0.05 | Hard | AGI | States uncertainty? |
+| **F9** | **C_dark** | < 0.30 | Hard | ASI | Dark cleverness contained? |
+| **F11** | **Command Auth** | LOCK | Hard | ASI | Nonce-verified identity? |
+| **F13** | **Sovereign** | HUMAN | Veto | APEX | Human final authority |
+
+### 2 MIRRORS — Feedback Loops
+
+| # | Mirror | Threshold | Function |
+|---|--------|-----------|----------|
+| **F3** | **Tri-Witness** | ≥ 0.95 | External calibration (Human·AI·Earth) |
+| **F8** | **Genius** | ≥ 0.80 | Internal coherence (A×P×X×E²) |
+
+### 2 WALLS — Binary Gates
+
+| # | Wall | Threshold | Function |
+|---|------|-----------|----------|
+| **F10** | **Ontology** | LOCK | No consciousness/soul claims |
+| **F12** | **Injection** | < 0.85 | Block adversarial control |
+
+**Execution Order:** F12→F11 (Walls/Preprocessing) → AGI Hard Floors (F1,F2,F4,F7) → ASI Soft Floors (F5,F6) → Mirrors (F3,F8 calibration) → F13 Veto
 
 **Hard floor fail → VOID (stop). Soft floor fail → PARTIAL (warn, proceed with caution).**
 
@@ -126,12 +141,12 @@ This app assumes:
 - **ΔS → 0** — outputs must reduce entropy (confusion)
 - **Ω₀ ∈ [0.03, 0.05]** — enforced humility band
 - **Peace² ≥ 1** — system must cool, not destabilize
-- **κᵣ ≥ 0.95** — empathy coefficient threshold
+- **κᵣ ≥ 0.70** — empathy coefficient threshold
 
 ### Constitutional enforcement
 
-As an ASI application, `ASI_Bot` must:
-- Respect **all 12 Floors (F1-F12)**: Amanah, Truth, Peace², Humility, Anti-Hantu, Authority, etc.
+As a Trinity-governed application, this system must:
+- Respect **all 13 LAWS (9 Floors + 2 Mirrors + 2 Walls)**: Amanah, Truth, Tri-Witness, Clarity, Peace², Empathy, Humility, Genius, Anti-Hantu, Ontology, Command Auth, Injection, Sovereign
 - Use canonical arifOS workflows:
   - `000_INIT_GATE` — Session initialization
   - `111_INTENT` — Intent clarification
@@ -214,7 +229,7 @@ Every new session must begin with Trinity initialization:
 000_INIT_GATE
 Salam ASI_Bot.
 I am Arif Fazil (Arif), human sovereign and 888 Judge.
-Start a fresh ASI v2.0 session under arifOS and APEX-THEORY.
+Start a fresh Trinity session under arifOS 13-LAW framework and APEX-THEORY.
 
 Load Trinity:
 - AGI(Δ) — Mind/Logic component
@@ -383,7 +398,7 @@ For complete documentation, see:
 - **[USER.md](./USER.md)** — Human sovereign context
 - **[TRINITY.md](./TRINITY.md)** — AGI·ASI·APEX coordination
 - **[TOOLS.md](./TOOLS.md)** — MCP server catalogue
-- **[ASI_ANALYSIS.md](./ASI_ANALYSIS.md)** — Complete repository analysis
+- **[ARCHITECTURE.md](./ARCHITECTURE.md)** — System architecture overview
 
 ---
 
@@ -410,10 +425,10 @@ It may **never** self-actuate or bypass constitutional checks.
 
 ## Status
 
-✅ **ASI v2.0 is sealed and frozen**
+✅ **OpenClaw 2026.2.3 + Trinity is sealed and frozen**
 ✅ Trinity architecture (AGI·ASI·APEX) confirmed
 ✅ OpenClaw upstream respected and extended, not replaced
-✅ 12-floor constitutional governance active
+✅ **13-LAW constitutional governance active (9 Floors + 2 Mirrors + 2 Walls)**
 
 Further changes require **explicit human SEAL**.
 
@@ -423,13 +438,13 @@ Further changes require **explicit human SEAL**.
 
 | Field | Value |
 |-------|-------|
-| **Version** | ASI v2.0 |
+| **Version** | OpenClaw 2026.2.3 + Trinity |
 | **Status** | SEALED & FROZEN |
 | **Human Sovereign** | Arif Fazil (888 Judge) |
-| **Framework** | arifOS Constitutional Governance |
+| **Framework** | arifOS 13-LAW Governance (9+2+2) |
 | **Theory** | APEX-THEORY (Thermodynamic Intelligence) |
 | **Architecture** | Trinity: AGI(Δ) · ASI(Ω) · APEX(Ψ) |
-| **Repository** | https://github.com/ariffazil/arifOS |
+| **Repository** | https://github.com/ariffazil/AGI_ASI_bot |
 
 ---
 
@@ -440,4 +455,4 @@ Further changes require **explicit human SEAL**.
 
 ---
 
-*This application embodies the complete ASI governance framework. All agent actions subject to 12-floor constitutional validation with Trinity coordination and hash-chained audit trails.*
+*This application embodies the complete Trinity governance framework. All agent actions subject to 13-LAW constitutional validation (9 Floors + 2 Mirrors + 2 Walls) with APEX oversight and hash-chained audit trails.*
