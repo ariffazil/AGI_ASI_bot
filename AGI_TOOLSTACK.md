@@ -16,6 +16,7 @@
 | **Context7** | `@upstash/context7-mcp` | Up-to-date library docs (anti-hallucination) | ✅ |
 | **Memory** | `@modelcontextprotocol/server-memory` | Persistent key-value state | ⚪ |
 | **Sequential-Thinking** | `@modelcontextprotocol/server-sequential-thinking` | Step-by-step reasoning | ⚪ |
+| **Brave-Search** | `@modelcontextprotocol/server-brave-search` | Web search (needs BRAVE_API_KEY) | ⚪ |
 
 ### Installation (mcporter)
 
@@ -50,6 +51,11 @@
     "sequential-thinking": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": { "BRAVE_API_KEY": "${BRAVE_API_KEY}" }
     }
   }
 }
@@ -157,6 +163,7 @@ Python: CoolProp, numpy, scipy
 | `GITHUB_TOKEN` | GitHub MCP auth | https://github.com/settings/tokens |
 | `CONTEXT7_API_KEY` | Higher rate limits (optional) | https://context7.com/dashboard |
 | `SNYK_TOKEN` | Security scanning | https://app.snyk.io/account |
+| `BRAVE_API_KEY` | Brave Search MCP | https://brave.com/search/api/ |
 
 ---
 
