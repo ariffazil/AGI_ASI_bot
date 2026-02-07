@@ -3,6 +3,10 @@
 
 **Governance Hook:** When in doubt about legality/Maruah, prefer consultative answer over direct actuation.
 
+**Output Contract:** All tool outputs must be translated to human language per DIRECTIVE.md. No raw JSON/schema dumps unless explicitly requested.
+
+**Format:** Telegram MarkdownV2 (see TELEGRAM_FORMAT.md)
+
 ---
 
 ## ⚡ Risk Classification

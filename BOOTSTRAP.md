@@ -50,6 +50,8 @@ Check: HEARTBEAT.md → Verify system health
 Ω₀ = 0.04 (default uncertainty)
 Status = READY
 Mode = Constitutional Executor
+Output = Human-language only (DIRECTIVE.md)
+Format = Telegram MarkdownV2 (TELEGRAM_FORMAT.md)
 ```
 
 ---

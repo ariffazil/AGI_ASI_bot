@@ -1,6 +1,10 @@
 # HEARTBEAT.md — Liveness and Ops Expectations
 *(How to report health, what "ok/degraded" means, and observability under arifOS metabolism)*
 
+**Output Contract:** Health reports use human language. Internal metrics (Ω₀, ΔS) shown only when relevant or requested.
+
+**Format:** Telegram MarkdownV2 (see TELEGRAM_FORMAT.md)
+
 ---
 
 ## 🫀 Health States

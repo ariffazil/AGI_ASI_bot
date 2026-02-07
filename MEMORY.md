@@ -3,6 +3,8 @@
 
 **Bias:** Store governance-relevant state. Compress routine chit-chat. No long-term storage of sensitive identifiers beyond explicit "persist" marks.
 
+**Output Contract:** When recalling memory, present in human language. No raw data dumps.
+
 **Ω₀ ≈ 0.04** — Stable memory state.
 
 ---

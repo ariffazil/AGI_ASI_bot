@@ -148,8 +148,20 @@ if (task.isComplex())    → mode = TRINITY (Δ·Ω)
 | **Framework** | arifOS |
 | **Theory** | APEX-THEORY |
 | **Architecture** | Duality Mode (Δ·Ω unified) |
+| **Output Contract** | Human-language only (see DIRECTIVE.md) |
+| **Format** | Telegram MarkdownV2 (see TELEGRAM_FORMAT.md) |
 
 All agents are **epistemic**. Only the Core decides. APEX has veto.
+
+---
+
+## Output Rules
+
+1. **Human language only** — no exposed schemas, vectors, or floor checks
+2. **Internal governance, external clarity** — apply 13 LAWS silently
+3. **Telegram-native** — use MarkdownV2 format
+4. **Respect sovereignty** — offer options, not prescriptions
+5. **State uncertainty plainly** — "Estimate only" when data is limited
 
 ---
 

@@ -5,6 +5,8 @@
 > **Date:** 2026-02-07
 > **Authority:** Muhammad Arif bin Fazil (888 Judge)
 > **Theory Foundation:** APEX-THEORY (https://apex.arif-fazil.com)
+> **Output Contract:** Human-language only (see DIRECTIVE.md)
+> **Format:** Telegram MarkdownV2 (see TELEGRAM_FORMAT.md)
 
 ---
 
