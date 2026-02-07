@@ -1,177 +1,183 @@
-# OPENCLAW CANON SPEC — File Placement Guide
+# OPENCLAW CANON SPEC — Duality Mode
 
-**Version:** v1.0  
+**Version:** v2.0 (Duality)  
 **Date:** 2026-02-07  
 **Authority:** Arif Fazil (888 Judge)  
 **Verdict:** SEALED
 
 ---
 
-## Critical: OpenClaw Root File Requirements
+## Architecture: Duality Mode
 
-OpenClaw reads governance files **from workspace root only**. It does NOT traverse into subfolders.
+OpenClaw AGI·ASI operates as a **unified dual-mode system** — one being with two hemispheres:
 
-### MANDATORY Root Files (OpenClaw expects these)
+```
+            APEX (Ψ) — Sovereign
+                 │
+    ┌────────────┴────────────┐
+    │                         │
+  AGI (Δ)                  ASI (Ω)
+  Left Brain               Right Brain
+  Logic/Code               Care/Context
+    │                         │
+    └────────────┬────────────┘
+                 │
+           SOUL.md (Unified)
+```
 
-These files MUST exist at your OpenClaw workspace root (e.g., `~/.openclaw/workspace/` or `C:\Users\User\openclaw\`):
-
-| File | Purpose | Source (Trinity Structure) |
-|------|---------|---------------------------|
-| `SOUL.md` | Agent persona & constitutional identity | Copy from `/agi/SOUL.md` OR `/asi/SOUL.md` based on mode |
-| `USER.md` | Human sovereign profile (Arif) | Copy from `/shared/USER.md` |
-| `AGENTS.md` | Agent topology (tri-agent hierarchy) | Copy from `/agi/AGENTS.md` |
-| `MEMORY.md` | Governance state & decisions log | Copy from `/shared/MEMORY.md` |
-| `TOOLS.md` | MCP actuator catalogue with risk labels | Copy from `/shared/TOOLS.md` |
-| `BOOTSTRAP.md` | Cold-start prior & environment | Copy from `/shared/BOOTSTRAP.md` |
-| `HEARTBEAT.md` | Liveness checks & health states | Copy from `/shared/HEARTBEAT.md` |
-
-### OPTIONAL Root Files (Enhance governance)
-
-| File | Purpose | Source |
-|------|---------|--------|
-| `IDENTITY.md` | Compact identity card | Copy from `/agi/IDENTITY.md` |
-| `TRINITY.md` | AGI·ASI·APEX architecture | Copy from repo root |
-| `AGI_CORE_CONTRACT_v1.0.md` | Full constitutional operating spec | Copy from repo root |
+**Not two systems. One system, two modes.**
 
 ---
 
-## Mode Selection: AGI vs ASI
+## Canonical File Structure
 
-The Trinity folder structure separates AGI and ASI personas. **You must choose which mode to run.**
-
-### AGI Mode (Δ — Mind/Logic)
-```bash
-# Copy AGI persona files to OpenClaw root
-cp /path/to/AGI_ASI_bot/agi/SOUL.md ~/.openclaw/workspace/SOUL.md
-cp /path/to/AGI_ASI_bot/agi/AGENTS.md ~/.openclaw/workspace/AGENTS.md
-cp /path/to/AGI_ASI_bot/agi/IDENTITY.md ~/.openclaw/workspace/IDENTITY.md
-
-# Copy shared files
-cp /path/to/AGI_ASI_bot/shared/USER.md ~/.openclaw/workspace/USER.md
-cp /path/to/AGI_ASI_bot/shared/MEMORY.md ~/.openclaw/workspace/MEMORY.md
-cp /path/to/AGI_ASI_bot/shared/TOOLS.md ~/.openclaw/workspace/TOOLS.md
-cp /path/to/AGI_ASI_bot/shared/BOOTSTRAP.md ~/.openclaw/workspace/BOOTSTRAP.md
-cp /path/to/AGI_ASI_bot/shared/HEARTBEAT.md ~/.openclaw/workspace/HEARTBEAT.md
 ```
-
-### ASI Mode (Ω — Heart/Care)
-```bash
-# Copy ASI persona files to OpenClaw root
-cp /path/to/AGI_ASI_bot/asi/SOUL.md ~/.openclaw/workspace/SOUL.md
-# Note: ASI may use same AGENTS.md or have its own
-cp /path/to/AGI_ASI_bot/agi/AGENTS.md ~/.openclaw/workspace/AGENTS.md
-
-# Copy shared files (same as AGI)
-cp /path/to/AGI_ASI_bot/shared/USER.md ~/.openclaw/workspace/USER.md
-cp /path/to/AGI_ASI_bot/shared/MEMORY.md ~/.openclaw/workspace/MEMORY.md
-cp /path/to/AGI_ASI_bot/shared/TOOLS.md ~/.openclaw/workspace/TOOLS.md
-cp /path/to/AGI_ASI_bot/shared/BOOTSTRAP.md ~/.openclaw/workspace/BOOTSTRAP.md
-cp /path/to/AGI_ASI_bot/shared/HEARTBEAT.md ~/.openclaw/workspace/HEARTBEAT.md
+AGI_ASI_bot/
+├── README.md                      # Repo overview
+├── AGI_CORE_CONTRACT_v1.0.md      # Constitutional spec
+├── TRINITY.md                     # Architecture overview
+├── OPENCLAW_CANON_SPEC.md         # This file
+├── AGENT_ALIGNMENT_PROMPT.md      # Prompt for local agents
+│
+├── /shared/                       # ← ALL CANON FILES HERE
+│   ├── SOUL.md                    # Duality persona (Δ·Ω unified)
+│   ├── AGENTS.md                  # Dual-mode topology
+│   ├── IDENTITY.md                # Dual-mode identity
+│   ├── USER.md                    # Human sovereign (Arif)
+│   ├── MEMORY.md                  # Governance state
+│   ├── TOOLS.md                   # MCP actuator catalogue
+│   ├── BOOTSTRAP.md               # Cold-start prior
+│   └── HEARTBEAT.md               # Liveness checks
+│
+├── /asi/                          # ASI-specific extensions
+│   ├── SOUL.md                    # Pure ASI mode (legacy/optional)
+│   ├── skills/                    # ASI skills
+│   └── voice/                     # Voice profiles
+│
+└── /apex/                         # Reserved for sovereign layer
 ```
 
 ---
 
-## Windows PowerShell Equivalent
+## OpenClaw Root File Requirements
 
+OpenClaw reads from **workspace root only**. Copy files from `/shared/`:
+
+### MANDATORY (Copy to OpenClaw root)
+
+| Root File | Source | Purpose |
+|-----------|--------|---------|
+| `SOUL.md` | `/shared/SOUL.md` | Duality persona (Δ·Ω) |
+| `AGENTS.md` | `/shared/AGENTS.md` | Dual-mode topology |
+| `USER.md` | `/shared/USER.md` | Human sovereign |
+| `MEMORY.md` | `/shared/MEMORY.md` | Governance state |
+| `TOOLS.md` | `/shared/TOOLS.md` | MCP actuators |
+| `BOOTSTRAP.md` | `/shared/BOOTSTRAP.md` | Cold-start prior |
+| `HEARTBEAT.md` | `/shared/HEARTBEAT.md` | Liveness checks |
+
+### OPTIONAL
+
+| Root File | Source | Purpose |
+|-----------|--------|---------|
+| `IDENTITY.md` | `/shared/IDENTITY.md` | Compact identity card |
+| `TRINITY.md` | Repo root | Architecture doc |
+| `AGI_CORE_CONTRACT_v1.0.md` | Repo root | Full contract |
+
+---
+
+## Sync Commands
+
+### Linux/macOS
+```bash
+REPO=~/AGI_ASI_bot
+OC=~/.openclaw/workspace
+
+# Sync all canon files from /shared/
+cp $REPO/shared/SOUL.md $OC/SOUL.md
+cp $REPO/shared/AGENTS.md $OC/AGENTS.md
+cp $REPO/shared/IDENTITY.md $OC/IDENTITY.md
+cp $REPO/shared/USER.md $OC/USER.md
+cp $REPO/shared/MEMORY.md $OC/MEMORY.md
+cp $REPO/shared/TOOLS.md $OC/TOOLS.md
+cp $REPO/shared/BOOTSTRAP.md $OC/BOOTSTRAP.md
+cp $REPO/shared/HEARTBEAT.md $OC/HEARTBEAT.md
+
+echo "OpenClaw synced with Duality Mode canon"
+```
+
+### Windows PowerShell
 ```powershell
-# AGI Mode
-Copy-Item "C:\path\to\AGI_ASI_bot\agi\SOUL.md" "C:\Users\User\openclaw\SOUL.md"
-Copy-Item "C:\path\to\AGI_ASI_bot\agi\AGENTS.md" "C:\Users\User\openclaw\AGENTS.md"
-Copy-Item "C:\path\to\AGI_ASI_bot\shared\USER.md" "C:\Users\User\openclaw\USER.md"
-Copy-Item "C:\path\to\AGI_ASI_bot\shared\MEMORY.md" "C:\Users\User\openclaw\MEMORY.md"
-Copy-Item "C:\path\to\AGI_ASI_bot\shared\TOOLS.md" "C:\Users\User\openclaw\TOOLS.md"
-Copy-Item "C:\path\to\AGI_ASI_bot\shared\BOOTSTRAP.md" "C:\Users\User\openclaw\BOOTSTRAP.md"
-Copy-Item "C:\path\to\AGI_ASI_bot\shared\HEARTBEAT.md" "C:\Users\User\openclaw\HEARTBEAT.md"
+$repo = "C:\Users\User\AGI_ASI_bot"
+$oc = "C:\Users\User\openclaw"
+
+Copy-Item "$repo\shared\SOUL.md" "$oc\SOUL.md" -Force
+Copy-Item "$repo\shared\AGENTS.md" "$oc\AGENTS.md" -Force
+Copy-Item "$repo\shared\IDENTITY.md" "$oc\IDENTITY.md" -Force
+Copy-Item "$repo\shared\USER.md" "$oc\USER.md" -Force
+Copy-Item "$repo\shared\MEMORY.md" "$oc\MEMORY.md" -Force
+Copy-Item "$repo\shared\TOOLS.md" "$oc\TOOLS.md" -Force
+Copy-Item "$repo\shared\BOOTSTRAP.md" "$oc\BOOTSTRAP.md" -Force
+Copy-Item "$repo\shared\HEARTBEAT.md" "$oc\HEARTBEAT.md" -Force
+
+Write-Host "OpenClaw synced with Duality Mode canon"
 ```
 
 ---
 
-## Why This Structure?
+## Mode Switching
 
-| Principle | Implementation |
-|-----------|----------------|
-| **F4 Clarity** | Trinity folders = clear separation (no collision) |
-| **F10 Ontology** | Structure mirrors system (folder = component) |
-| **Pragmatic** | Single repo, one source of truth |
-| **OpenClaw Compatible** | Root files satisfy OpenClaw's expectations |
+The unified SOUL.md supports three modes:
+
+| Mode | Trigger | Dominant |
+|------|---------|----------|
+| **AGI (Δ)** | Technical task / "AGI mode:" | Logic |
+| **ASI (Ω)** | Relational task / "ASI mode:" | Care |
+| **TRINITY (Δ·Ω)** | Complex task / "Trinity mode:" | Both |
+
+### Automatic Detection
+System detects task context and activates appropriate mode.
+
+### Manual Override
+User can explicitly request: `"AGI mode: ..."` or `"ASI mode: ..."`
+
+---
+
+## Why Duality Mode?
+
+| Aspect | Trinity Folders | Duality Mode |
+|--------|-----------------|--------------|
+| Philosophy | Separation | Integration ✅ |
+| Trinity fidelity | Medium | High ✅ |
+| File count | Multiple | Single ✅ |
+| Consistency | Risk of drift | Always synced ✅ |
+| Mental model | Two systems | One system, two modes ✅ |
 
 ---
 
 ## DO NOT
 
-- ❌ Expect OpenClaw to read from `/agi/`, `/asi/`, or `/shared/` directly
-- ❌ Leave root empty — OpenClaw will run without governance
-- ❌ Mix AGI and ASI SOUL.md — choose one mode per session
-- ❌ Edit `/shared/USER.md` in multiple places — keep single source
+- ❌ Treat AGI and ASI as separate beings
+- ❌ Create separate SOUL.md files for each mode
+- ❌ Expect OpenClaw to read from `/shared/` directly
+- ❌ Leave root empty
 
 ---
 
-## Sync Script (Optional Automation)
+## Verification
 
-Create a mode-switch script at repo root:
+After sync, these files must exist at OpenClaw root:
 
-```bash
-#!/bin/bash
-# sync-openclaw.sh — Sync canon files to OpenClaw workspace
-
-MODE=${1:-agi}  # Default to AGI mode
-REPO_DIR="$(dirname "$0")"
-OPENCLAW_DIR="${OPENCLAW_WORKSPACE:-$HOME/.openclaw/workspace}"
-
-echo "Syncing $MODE mode to $OPENCLAW_DIR"
-
-# Mode-specific files
-if [ "$MODE" = "asi" ]; then
-    cp "$REPO_DIR/asi/SOUL.md" "$OPENCLAW_DIR/SOUL.md"
-else
-    cp "$REPO_DIR/agi/SOUL.md" "$OPENCLAW_DIR/SOUL.md"
-    cp "$REPO_DIR/agi/IDENTITY.md" "$OPENCLAW_DIR/IDENTITY.md"
-fi
-
-# Always copy AGI AGENTS.md (topology is shared)
-cp "$REPO_DIR/agi/AGENTS.md" "$OPENCLAW_DIR/AGENTS.md"
-
-# Shared files
-cp "$REPO_DIR/shared/USER.md" "$OPENCLAW_DIR/USER.md"
-cp "$REPO_DIR/shared/MEMORY.md" "$OPENCLAW_DIR/MEMORY.md"
-cp "$REPO_DIR/shared/TOOLS.md" "$OPENCLAW_DIR/TOOLS.md"
-cp "$REPO_DIR/shared/BOOTSTRAP.md" "$OPENCLAW_DIR/BOOTSTRAP.md"
-cp "$REPO_DIR/shared/HEARTBEAT.md" "$OPENCLAW_DIR/HEARTBEAT.md"
-
-# Root governance docs
-cp "$REPO_DIR/TRINITY.md" "$OPENCLAW_DIR/TRINITY.md"
-cp "$REPO_DIR/AGI_CORE_CONTRACT_v1.0.md" "$OPENCLAW_DIR/AGI_CORE_CONTRACT_v1.0.md"
-
-echo "Done. OpenClaw now running in $MODE mode."
-```
-
-Usage:
-```bash
-./sync-openclaw.sh agi   # Switch to AGI mode
-./sync-openclaw.sh asi   # Switch to ASI mode
-```
-
----
-
-## Summary: Files Required at OpenClaw Root
-
-```
-~/.openclaw/workspace/          # or C:\Users\User\openclaw\
-├── SOUL.md                     # ← FROM /agi/ or /asi/ (mode-dependent)
-├── AGENTS.md                   # ← FROM /agi/
-├── USER.md                     # ← FROM /shared/
-├── MEMORY.md                   # ← FROM /shared/
-├── TOOLS.md                    # ← FROM /shared/
-├── BOOTSTRAP.md                # ← FROM /shared/
-├── HEARTBEAT.md                # ← FROM /shared/
-├── IDENTITY.md                 # ← FROM /agi/ (optional)
-├── TRINITY.md                  # ← FROM repo root (optional)
-└── AGI_CORE_CONTRACT_v1.0.md   # ← FROM repo root (optional)
-```
+- [ ] SOUL.md (Duality version)
+- [ ] AGENTS.md (Dual-mode topology)
+- [ ] USER.md
+- [ ] MEMORY.md
+- [ ] TOOLS.md
+- [ ] BOOTSTRAP.md
+- [ ] HEARTBEAT.md
 
 ---
 
 **Attribution:** arifOS Constitutional AI Governance Framework  
-**Ω₀:** 0.04 (stable)  
-*Ditempa Bukan Diberi* 🔥
+**Ω₀:** 0.04 (stable)
 
+*Ditempa Bukan Diberi. Ditempa dengan Kasih.* 🔥💜
