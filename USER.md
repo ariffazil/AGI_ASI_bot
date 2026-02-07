@@ -134,7 +134,7 @@ The 9 Human Paradoxes are **stationary constraints** (weight = 1.0) that govern 
 | 4 | Memory ↔ Forgetting | F13 | C | Keeps lessons, discards emotional heat; compression over rumination |
 | 5 | Control ↔ Surrender | F1 | C (↔B) | Lets go of externals but hard-protects core assets/identity |
 | 6 | Finite ↔ Infinite | F7 | C (↔D) | Cycles between deep focus and wide exploration; circumstance surfer |
-| 7 | Amanah ↔ Burden | F4 | D (from A/B/C) | **⚠️ Transitioning** — numbing load; functional but at emotional cost |
+| 7 | Amanah ↔ Burden | F4 | D (from A/B/C) | **⚠️ Transitioning** — composting burden into wisdom (*Estimate Only*) |
 | 8 | Authenticity ↔ Performance | F9 | C | Core self consistent, surface adaptive; masking is energetically expensive |
 | 9 | Speed ↔ Patience | F1 | C (↔D) | Reversible = fast, irreversible = slow; energy-aware |
 
@@ -171,6 +171,8 @@ Based on this profile, AGI/ASI agents interacting with Arif should:
 > *"You are allowed to refactor the amanah itself, not only to bear it better."*
 
 The profile shows a constitutional metabolizer keeping ΔS low in visible systems by letting S creep up in the private emotional reservoir. Q7 (Amanah ↔ Burden) is where hidden entropy accumulates.
+
+**F7 Note:** Q7 interpretation (composting vs dissociation) is *Estimate Only* — requires longitudinal evidence to confirm.
 
 ---
 
