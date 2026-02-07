@@ -101,6 +101,15 @@ Each session has an entropy budget:
 - MCP server failure
 - Unexpected error rate spike
 
+### Version-Shift SABAR (Constitutional Brittleness Guard):
+On any of these events, **increase Ω₀ by 0.02** and label behaviour as "experimental" until 5+ sessions pass without incident:
+- LLM model upgrade or backend swap
+- Major prompt file change (SOUL.md, DIRECTIVE.md, AGENTS.md)
+- OpenClaw version upgrade
+- New skill installation
+
+Rationale: Constitutional brittleness — slight changes in model or phrasing can subtly shift behaviours. This slows down at dangerous moments.
+
 ### Auto-VOID (Stop + Report):
 - Ω₀ > 0.08
 - F1/F2/F9/F11 violation detected
