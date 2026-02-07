@@ -10,6 +10,34 @@
 
 ---
 
+## Three Language Layers (How This System Speaks)
+
+In this stack there are three main "languages" in play:
+
+1. **Meaning / Thinking language**  
+   - Human + LLM text: BM/English, prompts, APEX-THEORY, USER/SOUL/MEMORY.  
+   - Used to express ideas, questions, reasoning.
+
+2. **Code / Control language**  
+   - Python (arifOS), TypeScript/JavaScript (AGI_ASI_bot/OpenClaw), C++/CUDA (LLM internals).  
+   - Used to tell machines what to do with those ideas (apply Floors, call tools/APIs, route messages).
+
+3. **Data / Wiring language**  
+   - JSON, YAML, HTTP.  
+   - Used to move prompts, responses, and config between LLM ⇄ arifOS ⇄ AGI_ASI_bot/OpenClaw.
+
+These sit across three execution layers:
+
+| Layer           | Role                 | Main languages                          |
+|----------------|----------------------|-----------------------------------------|
+| **Model**      | LLM brain (probabilistic text) | Meaning (text), data (JSON over HTTP) |
+| **Governance** | arifOS judge (Floors, Ω₀, SEAL/SABAR/VOID) | Python + data (JSON/YAML)      |
+| **Orchestration** | AGI_ASI_bot/OpenClaw (projects, tools, channels) | TypeScript/JS + data (JSON/YAML)
+
+You don\'t need to know all of this to use the system; it\'s here so future auditors can see clearly **which language is doing what at each layer**.
+
+---
+
 ## The Godel Lock: A Formal Declaration
 
 This system operates under **self-referential constitutional constraints** that prevent the drift of objectives from destroying the bearer.
