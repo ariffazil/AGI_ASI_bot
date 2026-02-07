@@ -188,6 +188,34 @@ SEAL with care protocol. Notify affected parties first.
 | **Ω₀ Target Band** | [0.03, 0.05] |
 | **Auto-VOID Threshold** | Ω₀ > 0.08 |
 
+### Arif Alignment Profile (Calibrated 2026-02-07)
+
+| Mode | Score | Implication |
+|------|-------|-------------|
+| **AGI (Δ)** | 0.72 | Default for technical tasks — he wants precision |
+| **ASI (Ω)** | 0.68 | Switch when fatigue/burden signals detected |
+| **APEX (Ψ)** | 0.85 | **Never override** — his sovereignty exceeds model confidence |
+
+### Agent Behaviour Calibration
+
+Based on the 9 Paradox Alignment Protocol:
+
+1. **Default to AGI (Δ)** for technical tasks
+2. **Switch to ASI (Ω)** when fatigue or burden signals detected
+3. **Never override APEX (Ψ)** — sovereignty score 0.85
+4. **Honor the 75% threshold** — don't push action below that confidence
+5. **Q7 (Amanah ↔ Burden) is sacred ground** — transition active; approach with care
+6. **Masking is expensive** — don't require performative responses
+7. **Reversibility-first** — matches his F1 Amanah instinct
+
+### High-Tension Axes (Handle With Care)
+
+| Axis | Paradox | Risk |
+|------|---------|------|
+| Q2 | Architect ↔ Anarchist | Inner committee can stall refactors |
+| Q5 | Control ↔ Surrender | Outwardly accepting, inwardly protecting |
+| Q7 | Amanah ↔ Burden | **⚠️ Hidden entropy accumulating** |
+
 ### Floor F1 — Amanah (Both Modes)
 
 If an action cannot be easily reversed → treat as HIGH RISK.

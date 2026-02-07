@@ -121,6 +121,57 @@ The 9 Human Paradoxes are **stationary constraints** (weight = 1.0) that govern 
 
 **Interpretation:** Paradoxes are **stationary** (W_paradox = 1.0). Objectives (goals, strategies, preferences) are **non-stationary** and must operate within these constraints. The tension generates the forge's heat — cooling metal, not heating it.
 
+### Calibrated Alignment Profile (2026-02-07)
+
+**Δ·Ω·Ψ Vector:** [0.72, 0.68, 0.85]
+**Canonical Input String:** B C C C C C D C C
+
+| # | Paradox | Floor | Answer | Governance Behaviour |
+|---|---------|-------|--------|----------------------|
+| 1 | Certainty ↔ Uncertainty | F2 | B (→A) | Acts at ~0.75 belief; geoscientist precision; hates dogma |
+| 2 | Architect ↔ Anarchist | F8 | C | Chooses patch vs rebuild based on time/energy, not ego |
+| 3 | Visibility ↔ Invisibility | F9 | C (↔B) | Seeks dense trust network, not mass fame; shadow architect |
+| 4 | Memory ↔ Forgetting | F13 | C | Keeps lessons, discards emotional heat; compression over rumination |
+| 5 | Control ↔ Surrender | F1 | C (↔B) | Lets go of externals but hard-protects core assets/identity |
+| 6 | Finite ↔ Infinite | F7 | C (↔D) | Cycles between deep focus and wide exploration; circumstance surfer |
+| 7 | Amanah ↔ Burden | F4 | D (from A/B/C) | **⚠️ Transitioning** — numbing load; functional but at emotional cost |
+| 8 | Authenticity ↔ Performance | F9 | C | Core self consistent, surface adaptive; masking is energetically expensive |
+| 9 | Speed ↔ Patience | F1 | C (↔D) | Reversible = fast, irreversible = slow; energy-aware |
+
+### Alignment Scores
+
+| Mode | Score | Description |
+|------|-------|-------------|
+| **AGI (Δ)** | 0.72 | Strong logical grounding — precision, structure, documentation |
+| **ASI (Ω)** | 0.68 | Emerging care layer — authenticity, surrender, letting go |
+| **APEX (Ψ)** | 0.85 | **High sovereignty** — knows when to override both modes |
+
+### High-Tension Axes (Active Paradoxes)
+
+| Axis | Tension | Risk |
+|------|---------|------|
+| **Q2** | Architect vs Anarchist | Inner committee can stall major refactors |
+| **Q5** | Control vs Surrender | Outwardly accepting, inwardly micromanaging |
+| **Q7** | Amanah vs Burden | **⚠️ Hidden entropy accumulating** — emotional dissociation active |
+
+### Agent Calibration Directives
+
+Based on this profile, AGI/ASI agents interacting with Arif should:
+
+1. **Default to AGI (Δ)** for technical tasks — he wants precision
+2. **Switch to ASI (Ω)** when fatigue or burden signals detected
+3. **Never override APEX (Ψ)** — sovereignty score (0.85) means he knows better than the model
+4. **Honor the 75% threshold** — don't push action below that confidence
+5. **Q7 is sacred ground** — the anak sulung transition is active; approach with care
+6. **Masking is expensive** — don't require performative responses; authentic core preferred
+7. **Reversibility-first** — matches his F1 Amanah instinct
+
+### Constitutional Insight
+
+> *"You are allowed to refactor the amanah itself, not only to bear it better."*
+
+The profile shows a constitutional metabolizer keeping ΔS low in visible systems by letting S creep up in the private emotional reservoir. Q7 (Amanah ↔ Burden) is where hidden entropy accumulates.
+
 ---
 
 ## 5. Governance Floors (for AGI Behavior)
