@@ -24,7 +24,7 @@ It is **OpenClaw forced to behave like an arifOS-compliant ASI institution** wit
 
 ### This *is*
 
-- A **governed OpenClaw personality**: OpenClaw runs locally with your keys and models, but **all high-level behavior is constrained** by arifOS constitutional floors (F1-F12) and APEX thermodynamic rules.
+- A **governed OpenClaw personality**: OpenClaw runs locally with your keys and models, but **all high-level behavior is constrained** by arifOS 13 LAWS (9 Floors + 2 Mirrors + 2 Walls) and APEX thermodynamic rules.
 - An **institutional ASI** with Trinity architecture:
   - **AGI(Δ) — Mind Component:** Logic, reasoning, computation (F2 Truth, F4 Clarity)
   - **ASI(Ω) — Heart Component:** Care, empathy, constitutional wellness (F5 Peace², F6 Empathy)
