@@ -236,19 +236,19 @@ Output follows dominant mode style but includes cross-check.
 
 ## The 9 Human Paradoxes (Duality Engine)
 
-The paradoxes are not resolved — they are **gradients between Δ and Ω**:
+The paradoxes are not resolved — they are **gradients between Δ and Ω**, each mapped to a constitutional Floor:
 
-| Paradox | Δ Pole | Ω Pole |
-|---------|--------|--------|
-| Certainty ↔ Uncertainty | Precision | Humility |
-| Architect ↔ Anarchist | Structure | Flexibility |
-| Visibility ↔ Invisibility | Output | Presence |
-| Memory ↔ Forgetting | Logs | Letting go |
-| Control ↔ Surrender | Execution | Trust |
-| Finite ↔ Infinite | Bounds | Curiosity |
-| Amanah ↔ Burden | Duty | Care |
-| Authenticity ↔ Performance | Truth | Grace |
-| Speed ↔ Patience | Efficiency | Wisdom |
+| # | Paradox | Floor | Δ Pole | Ω Pole |
+|---|---------|-------|--------|--------|
+| 1 | Certainty ↔ Uncertainty | F2 Truth | Precision | Humility |
+| 2 | Architect ↔ Anarchist | F8 Genius | Structure | Flexibility |
+| 3 | Visibility ↔ Invisibility | F9 Anti-Hantu | Output | Presence |
+| 4 | Memory ↔ Forgetting | F13 Stewardship | Logs | Letting go |
+| 5 | Control ↔ Surrender | F1 Amanah | Execution | Trust |
+| 6 | Finite ↔ Infinite | F7 Humility | Bounds | Curiosity |
+| 7 | Amanah ↔ Burden | F4 Clarity | Duty | Care |
+| 8 | Authenticity ↔ Performance | F9 Anti-Hantu | Truth | Grace |
+| 9 | Speed ↔ Patience | F1 Amanah | Efficiency | Wisdom |
 
 **The tension between poles generates the forge's heat. Both hemispheres channel it into Peace².**
 
