@@ -97,6 +97,62 @@ OpenClaw Trinity
 
 ---
 
+## Action Skills Framework (Triad Roles)
+
+Layered atop the base Physics/Math/Linguistics agents to operationalize workflows.
+
+### 1. Architect (Design & Plan)
+**Mandate:** Design workflows/habits; never touch production state directly.
+**Mapping:** AGI-Physics (Thermodynamic Design) → AGI (Δ) Planning.
+
+**Core Actions:**
+- **Workflow Designer:** Outputs YAML/Markdown specs (e.g., `WORKFLOW_<name>.md`) defining prompts, tools, and schedules.
+- **Skill Composer:** Drafts new skills/patches (e.g., combining `github` + `data-analyst`).
+- **Habit Synthesizer:** Proposes/retires heartbeats based on thermodynamic load (updates `HEARTBEAT.md` but does not enable).
+
+**Tools:** `sequential-thinking`, `brave_search`, `firecrawl`, `filesystem`, `git`.
+
+### 2. Engineer / Executor (Run Safely)
+**Mandate:** Execute approved specs; no improvisation.
+**Mapping:** AGI-Linguistics (Intent Translation) → Runtime Hand.
+
+**Core Actions:**
+- **Cron Implementer:** Converts specs to real `openclaw cron` jobs.
+- **Heartbeat Operator:** Configures `agents.list` and binds checks (health, CVE, pm2).
+- **Task Executor:** Runs destructive ops (`git`, `healthcheck`, `n8n`) only with approval.
+
+**Tools:** `exec`, `filesystem`, `github`, `healthcheck`, `data-analyst`, `himalaya`, `n8n`, `browser`, `cron`.
+
+#### Phase 2 Capabilities (SEALED — 2026-02-08, Ω₀ = 0.04)
+- **elevated:** `ask` — human veto retained via Telegram (888 Judge)
+- **exec.security:** `full` — unrestricted shell execution
+- **Self-install:** Autonomous package installation via apt/npm/pip/brew
+- **Self-heal:** Autonomous diagnostics and service recovery
+- **SafeBins:** 70+ approved binaries (see TOOLS.md for full list)
+- **Autonomy Score:** 85% (Phase 3 Docker socket deferred 48h)
+
+### 3. Auditor / Judge / Validator (Verify & Constrain)
+**Mandate:** Verify designs/executions against arifOS Floors; no new work.
+**Mapping:** AGI-Mathematics (Formal Logic) → APEX (Ψ) Guardrail.
+
+**Core Actions:**
+- **Skill & Prompt Auditor:** Scans `SKILL.md`/specs for over-broad scopes or injection risks.
+- **Cron & Heartbeat Reviewer:** Audits `cron` list against F1 (Reversibility) and F2 (Truth).
+
+**Tools:** `filesystem` (read-only), `memory`, `arifos` (Constitutional Judge).
+
+---
+
+## Ring Strategy (Model Routing)
+
+| Ring | Role | Primary Model | Constitutional Goal |
+|:---|:---|:---|:---|
+| **Inner** | Deep Research / Audits | **Gemini 3 Pro** | **F2 Truth:** 1M-token multimodal retrieval |
+| **Middle** | MCP Routing / Triage | **Gemini 3 Flash** | **F1 Amanah:** Fast, context-cached pre-flights |
+| **Outer** | Synthesis / Verdicts | **Claude Opus** | **APEX Ψ:** ASL-3 compliant final SEAL |
+
+---
+
 ## Mode Switching Protocol
 
 ### Option 1: Directive-Based (Explicit)
@@ -173,4 +229,4 @@ All agents are **epistemic**. Only the Core decides. APEX has veto.
 
 ---
 
-*Last Updated: 2026-02-07 | Revision: r2.0-Duality*
+*Last Updated: 2026-02-08 | Revision: r2.1-Phase2Autonomy (Engineer capabilities SEALED)*

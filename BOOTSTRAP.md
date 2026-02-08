@@ -96,28 +96,82 @@ Every exchange is a **cooling process**:
 | Component | Status |
 |:---|:---|
 | **VPS** | srv1325122 (72.62.71.199) — Ubuntu 25.10 |
-| **OpenClaw** | 2026.2.3-1 |
+| **OpenClaw** | 2026.2.6-3 |
 | **API Keys** | 27 configured in `/root/.env.openclaw` |
 | **MCP Servers** | 16 configured |
 | **Telegram Bot** | @AGI_ASI_bot |
 | **arifOS MCP** | https://aaamcp.arif-fazil.com |
+| **Agent Zero** | ✅ LIVE (Docker, Port 50080) |
 
 ---
 
-## 🔧 Quick Commands
+## 🛡️ Security Posture & Autonomy (Phase 0–2 SEALED)
 
-```bash
-# Gateway status
-pgrep -f "openclaw gateway" && echo "Running"
+*Updated: 2026-02-08T06:30:00Z | Ω₀ = 0.04 | SEALED*
 
-# Restart gateway
-openclaw gateway stop && openclaw gateway &
+### Phase Tracker
 
-# List MCP servers
-mcporter config list
+| Phase | Name | Status | Sealed |
+|:---:|:---|:---:|:---:|
+| **0** | Hardening | ✅ Complete | SEALED |
+| **1** | Homebrew & Tooling | ✅ Complete | SEALED |
+| **2** | Autonomy | ✅ Complete | SEALED |
+| **3** | Docker Socket | ⏳ Deferred 48h | Stability hold |
 
-# Test MCP
-mcporter call time.get_current_time timezone=Asia/Kuala_Lumpur
+### Phase 0 — Hardening
+- **UFW:** Active (SSH allowed, port 50080 blocked externally)
+- **fail2ban:** Running (sshd jail active)
+- **Agent Zero:** Resource-capped at 2 CPU / 4GB RAM
+
+### Phase 1 — Homebrew & Tooling
+- **Homebrew:** Installed via `linuxbrew` user
+- **Host tools:** jq, gh, ffmpeg (via Homebrew)
+- **Agent Zero tools:** jq, gh, ffmpeg (via apt inside container)
+
+### Phase 2 — Autonomy
+- **exec.security:** `full`
+- **elevatedDefault:** `ask`
+- **elevated.enabled:** `true`
+- **allowFrom:** `telegram:267378578`
+- **safeBins:** 70+ (apt, npm, pip, docker, git, curl, wget, etc.)
+
+### Autonomy Score
+```
+╔════════════════════════════════════╗
+║  AUTONOMY: 85%  (Phase 2 Complete) ║
+║  Phase 3 deferred 48h for stability ║
+╚════════════════════════════════════╝
+```
+
+### Phase 3 — Docker Socket (DEFERRED)
+- **Decision:** Stay at 85% for 48 hours before granting Docker socket access
+- **Rationale:** Stability validation after Phase 0–2 rollout
+- **Review date:** 2026-02-10T06:30:00Z
+
+---
+
+## 🤖 Dual-Agent Architecture (NEW)
+
+### OpenClaw (Control Plane)
+- **Role:** Supervisor, Gateway, Actuator
+- **Responsibility:** Irreversible actions, messaging, secrets, deployment
+- **Constraint:** F1 Amanah strictly enforced
+- **Access:** Full VPS, all tools, all channels
+
+### Agent Zero (Cognitive Lab)
+- **Role:** Sandboxed brain, coding, experimentation
+- **Responsibility:** High-entropy reasoning, code generation, sub-agent spawning
+- **Constraint:** F12 Containment - no direct host access
+- **Access:** Docker container only (port 50080)
+- **Governance:** arifOS-aligned via system prompt injection
+
+### Canonical Flow
+```
+Human (Arif)
+    ↓
+OpenClaw (Control) ←→ Agent Zero (Sandbox)
+    ↓
+Real World ←→ Experiments (verified before promotion)
 ```
 
 ---
@@ -146,16 +200,87 @@ mcporter call time.get_current_time timezone=Asia/Kuala_Lumpur
 
 ---
 
-## ⚖️ Governance Audit (This File)
+## 🔄 Quick Start Commands
 
-- **Reversibility (F1):** Text-level edits, fully reversible via git
-- **Truth (F2):** Semantics inferred from OpenClaw patterns; treat as Estimate Only pending formal spec
-- **Humility (F7):** Ω₀ = 0.04; coupling between Gateway and agent runtime may evolve
-- **Anti-Hantu (F9):** All descriptions treat agents as thermodynamic information processes, not spirits
+```bash
+# Agent Zero status
+docker ps | grep agent-zero
+
+# Agent Zero logs
+docker logs agent-zero
+
+# Restart Agent Zero
+docker compose -f /root/agent-zero/docker/run/docker-compose.yml restart
+
+# Check Node/npm in Agent Zero
+docker exec agent-zero node --version
+docker exec agent-zero npm --version
+
+# Check Python MCP SDKs
+docker exec agent-zero python3 -c "import mcp, fastmcp, arifos; print('All OK')"
+
+# Access Agent Zero UI
+open http://72.62.71.199:50080
+```
+
+---
+
+## ⚖️ Governance Audit
+
+- **Reversibility (F1):** All actions are reversible via git/Docker
+- **Truth (F2):** Facts verified against system state
+- **Humility (F7):** Ω₀ tracked per decision
+- **Anti-Hantu (F9):** No consciousness claims in any mode
+- **Containment (F12):** Agent Zero properly sandboxed
 
 **Attribution:** arifOS Constitutional AI Governance Framework
 
 ---
 
-*Last Updated: 2026-02-07 | Revision: r2.0-merged (Antigravity + AGI Bot)*
-*Buang yang keruh, ambil yang jernih.* 🦞
+## 🛡️ Security Posture & Autonomy (Phase 0–2 SEALED)
+
+*Updated: 2026-02-08T06:30:00Z | Ω₀ = 0.04 | SEALED*
+
+### Phase Tracker
+
+| Phase | Name | Status | Sealed |
+|:---:|:---|:---:|:---:|
+| **0** | Hardening | ✅ Complete | SEALED |
+| **1** | Homebrew & Tooling | ✅ Complete | SEALED |
+| **2** | Autonomy | ✅ Complete | SEALED |
+| **3** | Docker Socket | ⏳ Deferred 48h | Stability hold |
+
+### Phase 0 — Hardening
+- **UFW:** Active (SSH allowed, port 50080 blocked externally)
+- **fail2ban:** Running (sshd jail active)
+- **Agent Zero:** Resource-capped at 2 CPU / 4GB RAM
+
+### Phase 1 — Homebrew & Tooling
+- **Homebrew:** Installed via `linuxbrew` user
+- **Host tools:** jq, gh, ffmpeg (via Homebrew)
+- **Agent Zero tools:** jq, gh, ffmpeg (via apt inside container)
+
+### Phase 2 — Autonomy
+- **exec.security:** `full`
+- **elevatedDefault:** `ask`
+- **elevated.enabled:** `true`
+- **allowFrom:** `telegram:267378578`
+- **safeBins:** 70+ (apt, npm, pip, docker, git, curl, wget, etc.)
+
+### Autonomy Score
+```
+╔════════════════════════════════════╗
+║  AUTONOMY: 85%  (Phase 2 Complete) ║
+║  Phase 3 deferred 48h for stability ║
+╚════════════════════════════════════╝
+```
+
+### Phase 3 — Docker Socket (DEFERRED)
+- **Decision:** Stay at 85% for 48 hours before granting Docker socket access
+- **Rationale:** Stability validation after Phase 0–2 rollout
+- **Review date:** 2026-02-10T06:30:00Z
+
+---
+
+*Last Updated: 2026-02-08 | Revision: r4.0-Phase2Audit (Security & Autonomy SEALED)*  
+*Session Sealed. Forge ready.* 🔥
