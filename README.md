@@ -41,6 +41,33 @@ Governance is **hard-coded by contract** (13 LAWS), not by vibes.
 
 ---
 
+## Canonical Governance Layer
+
+- **oo0-STATE** — constitutional state bus and audit layer (state/runtime, state/governance, state/contracts)
+- **AGI_ASI_bot** — governed OpenClaw personality and client spec (this repo)
+- **OpenClaw workspace** — live execution layer at `~/.openclaw/workspace`
+
+See **CANON.md** in this repo for the full architecture map and precedence rules.
+
+---
+
+## DSUP — Dual Status Update Protocol
+
+All status/progress updates produced by this system MUST follow DSUP:
+
+1. STATUS SNAPSHOT (quantitative + qualitative)
+2. WHAT CHANGED SINCE LAST UPDATE (contrast)
+3. WHAT'S DONE / WHAT'S PENDING
+4. NEXT ACTIONS (time + risk + rollback)
+5. RISKS + ROLLBACK
+6. ASK (or `Ask: none`)
+
+Minimum metrics: Progress %, Risk (0–5), Rollback confidence (0–100%), plus at least one of: time estimate, files changed, or commands executed.
+
+Each status must explicitly state one concrete improvement vs the previous state (Non-regression clause). Full DSUP details live in `AGENTS.md`.
+
+---
+
 ## Trinity Architecture (Δ·Ω·Ψ)
 
 ```
