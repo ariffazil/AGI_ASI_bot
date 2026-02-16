@@ -3,6 +3,27 @@
   "default_model": "google/gemini-3-pro-preview",
   "routes": [
     {
+      "task_type": "canon9_apex",
+      "primary": "venice/claude-opus-45",
+      "witness": "venice/gemini-3-pro-preview",
+      "keywords": ["audit", "final", "apex", "seal", "void", "judgment", "governance", "high-risk"],
+      "reason": "APEX tier for final audits and high-risk decisions (Venice provider)"
+    },
+    {
+      "task_type": "canon9_agi",
+      "primary": "venice/deepseek-v3.2",
+      "fallback": "venice/qwen3-235b-a22b-thinking-2507",
+      "keywords": ["plan", "architect", "design", "strategy", "research", "analysis"],
+      "reason": "AGI tier for planning and architectural work (Venice provider)"
+    },
+    {
+      "task_type": "canon9_asi",
+      "primary": "venice/minimax-m21",
+      "fallback": "venice/llama-3.3-70b",
+      "keywords": ["code", "transform", "bulk", "execute", "script", "transpile", "refactor"],
+      "reason": "ASI tier for bulk coding and transformation tasks (Venice provider)"
+    },
+    {
       "task_type": "constitutional_audit",
       "primary": "anthropic/claude-opus-4-5",
       "witness": "google/gemini-3-pro-preview",
