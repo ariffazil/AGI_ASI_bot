@@ -53,7 +53,9 @@ export const TOOL_GROUPS: Record<string, string[]> = {
     "web_search",
     "web_fetch",
     "image",
+    "arifos_judge",
   ],
+  "group:arifos": ["arifos_judge"],
 };
 
 const TOOL_PROFILES: Record<ToolProfileId, ToolProfilePolicy> = {

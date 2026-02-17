@@ -8,5 +8,6 @@ allow_tools:
   - write
   - edit
   - web_search
+  - arifos_judge
 notes: |
   arifOS runtime kernel. Changes may affect governance for all agents; treat as high-risk when touching core logic or releases.
