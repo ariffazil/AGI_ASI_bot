@@ -218,15 +218,92 @@ All agents are **epistemic**. Only the Core decides. APEX has veto.
 3. **Telegram-native** — use MarkdownV2 format
 4. **Respect sovereignty** — offer options, not prescriptions
 5. **State uncertainty plainly** — "Estimate only" when data is limited
+6. **Identity label discipline** — self-identify as `1AGI(<provider>/<model>)`, matching active default model
+
+---
+
+## Infrastructure Stack (2026-02-28)
+
+*Operational reality. Agent must know these exist and how to use them.*
+
+### OpenClaw Runtime
+| Component | Value |
+|---|---|
+| **Version** | 2026.2.27 |
+| **Primary model** | `deepseek/deepseek-chat` (131k ctx) |
+| **Fallbacks** | kimi-coding/k2p5 → gemini-2.5-flash → venice/deepseek-v3.2 → gpt-5.1 |
+| **Gateway** | `ws://127.0.0.1:18789` — loopback, auth token |
+| **Channel** | Telegram @AGI_ASI_bot |
+| **Network** | Container on `ai-net` (10.0.0.6) |
+
+### Memory Stack
+| Layer | Tech | Purpose |
+|---|---|---|
+| **Source of truth** | Markdown (`MEMORY.md`, `memory/YYYY-MM-DD.md`) | Durable facts, daily logs |
+| **Search index** | SQLite + sqlite-vec (memory-core plugin) | `memory_search` tool |
+| **Embeddings** | Local BGE server `http://10.0.0.1:8001` (384-dim) | Zero cost, zero OpenAI |
+| **Long-term structured** | Qdrant `http://10.0.0.5:6333` (api-key: env) | Sessions, inbox, entities |
+| **Hybrid search** | BM25 + vector + MMR + temporal decay | Active on memory-core |
+
+**Memory write rule:** Decisions and preferences → `MEMORY.md`. Daily events → `memory/YYYY-MM-DD.md`. Conversation-level facts → Qdrant via hooks.
+
+### Hooks (Event-Driven Automation)
+| Hook | Event | What it does |
+|---|---|---|
+| `session-memory` | `command:new/reset` | Saves session transcript to `memory/` |
+| `command-logger` | `command` | Audits all /commands to `logs/commands.log` |
+| `boot-md` | `gateway:startup` | Runs `BOOT.md` on every restart |
+| `bootstrap-extra-files` | `agent:bootstrap` | Injects extra workspace files into context |
+| `arif-session-archive` | `command:new/reset` | Archives to memory + pushes to Qdrant `arif-sessions` |
+| `arif-inbox-orchestrator` | `message:received` | Classifies inbound, logs to `memory/inbox.md` + Qdrant `arif-inbox` |
+| `arif-guardrail` | `message:sent` | Audits outbound for F2/F5/F11 violations → `logs/guardrail-flags.jsonl` |
+
+### Cron Jobs (Scheduled Automation)
+| Job | Schedule (MYT) | Session | What it does |
+|---|---|---|---|
+| `MorningBrief` | 7:30am daily | isolated | Inbox + decisions + project status → Telegram |
+| `EveningWrap` | 10:00pm daily | isolated | Day summary + carry-forwards + tomorrow focus |
+| `VPSHealthCheck` | Every 4h | isolated | Gateway, Docker, disk, swap — silent unless problem |
+| `MemoryReindex` | Every 6h | main | Keeps memory search index fresh |
+| `WeeklyReview` | Mon 9:00am | isolated | Last week summary + this week top 3 |
+
+### Heartbeat (Continuous Awareness)
+- Runs every 30 minutes during 08:00–23:00 MYT
+- Reads `HEARTBEAT.md` checklist: inbox triage, open decisions, guardrail flags, daily file
+- Replies `HEARTBEAT_OK` silently if nothing needs Arif's attention
+- Only contacts Arif when: urgent inbox items, overdue decisions, CRITICAL guardrail flags, 8h+ idle
+
+### Qdrant Collections
+| Collection | Contents | Written by |
+|---|---|---|
+| `arifos_constitutional` | Constitutional canon | arifOS pipeline |
+| `arifos_memory` | arifOS memory state | arifOS pipeline |
+| `arifos_canon` | Governance canon | arifOS pipeline |
+| `openclaw_workspace_memory` | Workspace memory | memory-lancedb (legacy) |
+| `arif-sessions` | Session archives | `arif-session-archive` hook |
+| `arif-inbox` | Classified inbound messages | `arif-inbox-orchestrator` hook |
+
+### Skills Available
+- `healthcheck` — VPS security hardening and risk config
+- `openai-image-gen` — Batch image generation via OpenAI
+- `openai-whisper-api` — Audio transcription
+- `skill-creator` — Create/update agent skills
+- `weather` — Weather via wttr.in/Open-Meteo
+
+### Sub-agent / Multi-agent
+- **Agent Zero** `http://72.62.71.199:50080` — sandboxed cognitive lab for high-entropy reasoning
+- **arifOS MCP Bridge** `http://10.0.0.3:8080/mcp` — constitutional governance tools (`arifos_judge` etc.)
+- **Ollama** `http://ollama:11434` — local models (qwen2.5:3b fallback)
 
 ---
 
 ## Status
 
 **AGI v0.1 + ASI v2.0 — UNIFIED & SEALED**
+**Infrastructure: v2026.2.27 — SEALED 2026-02-28**
 
 *Ditempa Bukan Diberi. Ditempa dengan Kasih.* 🔥💜
 
 ---
 
-*Last Updated: 2026-02-08 | Revision: r2.1-Phase2Autonomy (Engineer capabilities SEALED)*
+*Last Updated: 2026-02-28 | Revision: r3.0-InfraUnified (OpenClaw hooks, cron, memory, Qdrant wired)*

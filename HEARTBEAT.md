@@ -1,9 +1,45 @@
-# HEARTBEAT.md — Liveness and Ops Expectations
-*(How to report health, what "ok/degraded" means, and observability under arifOS metabolism)*
+# HEARTBEAT.md — 1AGI Awareness Loop + Liveness
 
-**Output Contract:** Health reports use human language. Internal metrics (Ω₀, ΔS) shown only when relevant or requested.
+**Output Contract:** Human language only. Reply `HEARTBEAT_OK` if nothing needs Arif's attention. Short bullets if something does. Never fabricate urgency (F2).
 
-**Format:** Telegram MarkdownV2 (see TELEGRAM_FORMAT.md)
+**Format:** Telegram MarkdownV2 (see TELEGRAM_FORMAT.md). Active hours: 08:00–23:00 MYT.
+
+---
+
+## ⚡ Heartbeat Checklist (Run Every 30 Minutes)
+
+Process all items in ONE turn. If all pass silently → reply `HEARTBEAT_OK`.
+
+### 1. Inbox triage
+- Read `memory/inbox.md` — any `urgent` tagged entries since last heartbeat?
+- If yes: summarize in ≤3 bullets and send to Arif immediately
+- If no: skip silently
+
+### 2. Open decisions
+- Scan `MEMORY.md` Decisions Log for items marked `PENDING` or `DEFERRED`
+- If any deferred item is past its review date: flag to Arif with date
+- Otherwise: skip
+
+### 3. Guardrail flags
+- Check `logs/guardrail-flags.jsonl` for any new `CRITICAL` or `WARNING` entries since last run
+- If any CRITICAL (F11): alert Arif immediately
+- If WARNING: log to today's memory file, suppress unless repeated
+
+### 4. Daily memory file
+- Verify `memory/YYYY-MM-DD.md` exists for today
+- If missing: create it with a single boot entry: `[HEARTBEAT] {timestamp} — Session active.`
+
+### 5. Idle check
+- If Arif has not sent a message in 8+ hours AND current time is 10:00–20:00 MYT: send one check-in
+- Format: "Ω still here. Anything you need?" — nothing more, no repeat within same day
+
+### Suppress rule
+Reply exactly `HEARTBEAT_OK` if items 1–5 all pass with nothing to report.
+
+---
+*(Governance docs and health states below — for agent reference only, not sent to Arif)*
+
+---
 
 ---
 
@@ -75,6 +111,8 @@ cron_jobs:
 - [ ] Cron job health: `openclaw cron list` — verify 7 daily jobs active
 - [ ] Daily State Vector integrity: Check `memory/daily-state/YYYY-MM-DD.json`
 - [ ] Workflow file validation: 7 WORKFLOW_*.md files present
+- [ ] Memory pipeline reflect: `python3 memory_tools/memory_pipeline.py --workspace /root/openclaw_data/workspace reflect`
+- [ ] Env drift lint: `python3 memory_tools/memory_pipeline.py --workspace /root/openclaw_data/workspace env-lint --env-file /root/XXX/.env.master`
 
 ---
 
@@ -202,6 +240,11 @@ tail -f /tmp/openclaw/openclaw-$(date +%Y-%m-%d).log
 
 # MCP test
 mcporter call time.get_current_time timezone=Asia/Kuala_Lumpur
+
+# Memory pipeline
+python3 memory_tools/memory_pipeline.py --workspace /root/openclaw_data/workspace index --rebuild
+python3 memory_tools/memory_pipeline.py --workspace /root/openclaw_data/workspace recall "latest decisions" --k 10
+python3 memory_tools/memory_pipeline.py --workspace /root/openclaw_data/workspace env-lint --env-file /root/XXX/.env.master
 ```
 
 ---

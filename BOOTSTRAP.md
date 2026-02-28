@@ -96,18 +96,25 @@ Every exchange is a **cooling process**:
 | Component | Status |
 |:---|:---|
 | **VPS** | srv1325122 (72.62.71.199) — Ubuntu 25.10 |
-| **OpenClaw** | 2026.2.6-3 |
-| **API Keys** | 27 configured in `/root/.env.openclaw` |
+| **OpenClaw** | 2026.2.27 (Docker, ai-net, `unless-stopped`) |
+| **Primary model** | deepseek/deepseek-chat (fallbacks: kimi→gemini→venice→gpt) |
+| **Memory** | memory-core + BGE embed server (port 8001, 384-dim, local) |
+| **Qdrant** | http://10.0.0.5:6333 — 6 collections active |
+| **Hooks** | 7/7 active (3 custom: session-archive, inbox-orchestrator, guardrail) |
+| **Cron jobs** | 5 active (morning brief, evening wrap, VPS health, memory reindex, weekly review) |
+| **Heartbeat** | 30m, 08:00–23:00 MYT, target: last |
+| **API Keys** | 27 configured |
 | **MCP Servers** | 16 configured |
 | **Telegram Bot** | @AGI_ASI_bot |
-| **arifOS MCP** | https://aaamcp.arif-fazil.com |
+| **arifOS MCP** | https://aaamcp.arif-fazil.com (stateless, option B) |
 | **Agent Zero** | ✅ LIVE (Docker, Port 50080) |
+| **ClawHub** | v0.7.0 installed |
 
 ---
 
-## 🛡️ Security Posture & Autonomy (Phase 0–2 SEALED)
+## 🛡️ Security Posture & Autonomy (All Phases SEALED — 2026-02-28)
 
-*Updated: 2026-02-08T06:30:00Z | Ω₀ = 0.04 | SEALED*
+*Updated: 2026-02-28 | Ω₀ = 0.04 | SEALED*
 
 ### Phase Tracker
 
@@ -116,37 +123,22 @@ Every exchange is a **cooling process**:
 | **0** | Hardening | ✅ Complete | SEALED |
 | **1** | Homebrew & Tooling | ✅ Complete | SEALED |
 | **2** | Autonomy | ✅ Complete | SEALED |
-| **3** | Docker Socket | ⏳ Deferred 48h | Stability hold |
-
-### Phase 0 — Hardening
-- **UFW:** Active (SSH allowed, port 50080 blocked externally)
-- **fail2ban:** Running (sshd jail active)
-- **Agent Zero:** Resource-capped at 2 CPU / 4GB RAM
-
-### Phase 1 — Homebrew & Tooling
-- **Homebrew:** Installed via `linuxbrew` user
-- **Host tools:** jq, gh, ffmpeg (via Homebrew)
-- **Agent Zero tools:** jq, gh, ffmpeg (via apt inside container)
+| **3** | Docker Socket + ai-net | ✅ Active | SEALED 2026-02-28 |
 
 ### Phase 2 — Autonomy
 - **exec.security:** `full`
 - **elevatedDefault:** `ask`
 - **elevated.enabled:** `true`
 - **allowFrom:** `telegram:267378578`
-- **safeBins:** 70+ (apt, npm, pip, docker, git, curl, wget, etc.)
+- **safeBins:** 70+
 
 ### Autonomy Score
 ```
-╔════════════════════════════════════╗
-║  AUTONOMY: 85%  (Phase 2 Complete) ║
-║  Phase 3 deferred 48h for stability ║
-╚════════════════════════════════════╝
+╔════════════════════════════════════════╗
+║  AUTONOMY: 85%  (Phases 0–3 Complete)  ║
+║  elevated: ask — human veto permanent  ║
+╚════════════════════════════════════════╝
 ```
-
-### Phase 3 — Docker Socket (DEFERRED)
-- **Decision:** Stay at 85% for 48 hours before granting Docker socket access
-- **Rationale:** Stability validation after Phase 0–2 rollout
-- **Review date:** 2026-02-10T06:30:00Z
 
 ---
 
@@ -275,12 +267,12 @@ open http://72.62.71.199:50080
 ╚════════════════════════════════════╝
 ```
 
-### Phase 3 — Docker Socket (DEFERRED)
-- **Decision:** Stay at 85% for 48 hours before granting Docker socket access
-- **Rationale:** Stability validation after Phase 0–2 rollout
-- **Review date:** 2026-02-10T06:30:00Z
+### Phase 3 — Docker Socket (ACTIVE — 2026-02-28)
+- **Decision:** Docker socket active. openclaw container on `ai-net`, reaches ollama + qdrant
+- **Validated:** 2026-02-28 — stable, no issues
+- **Autonomy:** 85% maintained. `elevated: ask` permanent
 
 ---
 
-*Last Updated: 2026-02-08 | Revision: r4.0-Phase2Audit (Security & Autonomy SEALED)*  
+*Last Updated: 2026-02-28 | Revision: r5.0-InfraUnified (DeepSeek primary, hooks, cron, memory, Qdrant)*
 *Session Sealed. Forge ready.* 🔥

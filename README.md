@@ -1,10 +1,28 @@
-# OpenClaw + Trinity — Constitutional Governance
+# arifOS 1AGI — Trinity-Governed OpenClaw for Real-World Ops
 
-> **OpenClaw 2026.2.3** with AGI·ASI·APEX tri-modal governance under arifOS **13-LAW framework**.
+> **OpenClaw 2026.2.27** · arifOS 13-LAW Constitutional Governance · Primary: `deepseek/deepseek-chat`
 
 > **DITEMPA BUKAN DIBERI — Forged, Not Given.**
 > **DITEMPA DENGAN KASIH — Forged with Care.**
 > **Trinity Architecture:** AGI(Δ) · ASI(Ω) · APEX(Ψ)
+
+---
+
+## OpenClaw Showcase
+
+A governed OpenClaw personality that runs my digital life under arifOS 13-LAW constitutional governance — not just another task bot.
+
+- **Trinity-governed 1AGI** (AGI·ASI·APEX) with `SOUL.md`, `AGENTS.md`, `USER.md` defining identity, floors, and human sovereignty (888 Judge)
+- **Triple-layer memory** — Markdown canon (`MEMORY.md` + daily logs) → local BGE embeddings (384-dim, zero cost) → SQLite hybrid search (BM25 + vector + MMR + temporal decay) → Qdrant for long-term structured state
+- **Automation fabric** — 7 hooks (session archive, inbox classification, outbound guardrail) + 5 cron jobs (morning brief, evening wrap, weekly review, VPS health, memory reindex) + 30-min heartbeat awareness loop
+- **Constitutional runtime** — Floors F1–F13 enforced silently: irreversible actions → 888_HOLD, fake certainty → F2 block, outbound dignity → F5 guardrail
+- **MCP bridge** — arifOS constitutional kernel wired via `openclaw-arifos-bridge` as a stateless MCP sidecar
+
+**Repo:** https://github.com/ariffazil/AGI_ASI_bot
+**Bridge:** https://github.com/ariffazil/openclaw-arifos-bridge
+**arifOS:** https://github.com/ariffazil/arifOS
+
+---
 
 This repository extends **OpenClaw** with **Trinity constitutional governance** — a three-layer intelligence system (AGI·ASI·APEX) operating under arifOS **13 LAWS** (9 Floors + 2 Mirrors + 2 Walls):
 
