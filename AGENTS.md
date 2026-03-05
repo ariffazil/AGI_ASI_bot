@@ -229,20 +229,21 @@ All agents are **epistemic**. Only the Core decides. APEX has veto.
 ### OpenClaw Runtime
 | Component | Value |
 |---|---|
-| **Version** | 2026.2.27 |
-| **Primary model** | `deepseek/deepseek-chat` (131k ctx) |
-| **Fallbacks** | kimi-coding/k2p5 → gemini-2.5-flash → venice/deepseek-v3.2 → gpt-5.1 |
-| **Gateway** | `ws://127.0.0.1:18789` — loopback, auth token |
+| **Version** | 2026.3.2 |
+| **Primary model** | `moonshot/kimi-k2` |
+| **Fallbacks** | `anthropic/claude-sonnet-4-6` |
+| **Gateway** | `ws://0.0.0.0:18789` (LAN bind) — auth token required |
+| **Control UI** | `https://claw.arifosmcp.arif-fazil.com` (via Traefik TLS) |
 | **Channel** | Telegram @AGI_ASI_bot |
-| **Network** | Container on `ai-net` (10.0.0.6) |
+| **Network** | Container on `arifos_arifos_trinity` (10.0.10.0/24) |
 
 ### Memory Stack
 | Layer | Tech | Purpose |
 |---|---|---|
 | **Source of truth** | Markdown (`MEMORY.md`, `memory/YYYY-MM-DD.md`) | Durable facts, daily logs |
 | **Search index** | SQLite + sqlite-vec (memory-core plugin) | `memory_search` tool |
-| **Embeddings** | Local BGE server `http://10.0.0.1:8001` (384-dim) | Zero cost, zero OpenAI |
-| **Long-term structured** | Qdrant `http://10.0.0.5:6333` (api-key: env) | Sessions, inbox, entities |
+| **Embeddings** | Local BGE server — not yet deployed on current VPS | Planned (Phase 5) |
+| **Long-term structured** | Qdrant `http://qdrant_memory:6333` (on `arifos_arifos_trinity`) | Sessions, inbox, entities |
 | **Hybrid search** | BM25 + vector + MMR + temporal decay | Active on memory-core |
 
 **Memory write rule:** Decisions and preferences → `MEMORY.md`. Daily events → `memory/YYYY-MM-DD.md`. Conversation-level facts → Qdrant via hooks.
@@ -291,19 +292,19 @@ All agents are **epistemic**. Only the Core decides. APEX has veto.
 - `weather` — Weather via wttr.in/Open-Meteo
 
 ### Sub-agent / Multi-agent
-- **Agent Zero** `http://72.62.71.199:50080` — sandboxed cognitive lab for high-entropy reasoning
-- **arifOS MCP Bridge** `http://10.0.0.3:8080/mcp` — constitutional governance tools (`arifos_judge` etc.)
-- **Ollama** `http://ollama:11434` — local models (qwen2.5:3b fallback)
+- **Agent Zero** — Phase 4 (not yet deployed; image `agent0ai/agent-zero:latest` pending)
+- **arifOS MCP** `https://arifosmcp.arif-fazil.com/mcp` — constitutional governance tools (14 tools, Streamable HTTP)
+- **Ollama** `http://ollama_engine:11434` — local models (qwen2.5:3b loaded; on `arifos_arifos_trinity`)
 
 ---
 
 ## Status
 
 **AGI v0.1 + ASI v2.0 — UNIFIED & SEALED**
-**Infrastructure: v2026.2.27 — SEALED 2026-02-28**
+**Infrastructure: v2026.3.2 — UPDATED 2026-03-05**
 
 *Ditempa Bukan Diberi. Ditempa dengan Kasih.* 🔥💜
 
 ---
 
-*Last Updated: 2026-02-28 | Revision: r3.0-InfraUnified (OpenClaw hooks, cron, memory, Qdrant wired)*
+*Last Updated: 2026-03-05 | Revision: r3.1-InfraSync (URLs updated to live VPS: arifosmcp.arif-fazil.com, claw.arifosmcp.arif-fazil.com)*

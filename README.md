@@ -19,8 +19,22 @@ A governed OpenClaw personality that runs my digital life under arifOS 13-LAW co
 - **MCP bridge** — arifOS constitutional kernel wired via `openclaw-arifos-bridge` as a stateless MCP sidecar
 
 **Repo:** https://github.com/ariffazil/AGI_ASI_bot
-**Bridge:** https://github.com/ariffazil/openclaw-arifos-bridge
 **arifOS:** https://github.com/ariffazil/arifOS
+
+---
+
+## Live Server
+
+| Endpoint | URL | Status |
+|----------|-----|--------|
+| **arifOS MCP** (14 tools, Streamable HTTP) | `https://arifosmcp.arif-fazil.com/mcp` | LIVE |
+| **OpenClaw Control UI** | `https://claw.arifosmcp.arif-fazil.com` | LIVE |
+| **arifOS Health** | `https://arifosmcp.arif-fazil.com/health` | LIVE |
+| **Grafana** | `https://monitor.arifosmcp.arif-fazil.com` | LIVE |
+| **n8n** | `https://flow.arifosmcp.arif-fazil.com` | LIVE |
+| **Webhook CI/CD** | `https://hook.arifosmcp.arif-fazil.com/hooks/deploy-arifos` | LIVE |
+
+**Host:** `srv1325122.hstgr.cloud` (72.62.71.199) · **Stack:** Docker + Traefik v3.6.9 · **Network:** `arifos_arifos_trinity`
 
 ---
 
